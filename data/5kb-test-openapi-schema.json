@@ -1,0 +1,434 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "Event"
+  },
+  "paths": {},
+  "components": {
+    "schemas": {
+      "Event": {
+        "type": "object",
+        "required": ["oldest"],
+        "properties": {
+          "oldest": {
+  "type": "object",
+  "required": ["activity", "distance", "fought", "sell", "difficult", "range", "dry", "effort", "house", "article", "drink", "off", "such", "later", "gravity", "by", "dark", "season", "hat", "fresh", "kids"],
+  "properties": {
+    "off": {
+      "type": "object",
+      "required": ["carefully", "health", "eventually", "run", "section", "powder", "pupil", "expect", "hungry", "gray", "have", "land", "bridge", "worried", "flame", "free", "tank", "wrapped", "arm"],
+      "properties": {
+        "section": {
+          "type": "object",
+          "required": ["minerals", "brought", "father", "official", "house", "observe", "sea", "interior", "fall", "attack", "repeat", "manufacturing", "statement", "serious", "given", "bent", "tomorrow", "thrown", "come", "as", "size", "among", "therefore", "well", "sing", "first", "open"],
+          "properties": {
+            "among": {
+              "type": "number"
+            },
+            "as": {
+              "type": "number"
+            },
+            "attack": {
+              "type": "string"
+            },
+            "bent": {
+              "type": "number"
+            },
+            "brought": {
+              "type": "number",
+              "format": "double"
+            },
+            "come": {
+              "type": "array",
+              "items": {
+                "oneOf": [{
+                  "type": "array",
+                  "items": {
+                    "oneOf": [{
+                      "type": "object",
+                      "required": ["larger", "average", "bus", "leader", "colony", "correct", "several", "begun", "best", "shot", "society", "tried", "hour", "writing", "land", "grown", "wealth", "having", "original", "below", "drove", "nails", "neck", "entirely", "voyage", "wrong", "globe"],
+                      "properties": {
+                        "below": {
+                          "type": "object",
+                          "required": ["select", "dropped", "husband", "birds", "when", "tune", "naturally", "are", "else", "beside", "shoulder", "so", "you", "laid", "having", "railroad", "wolf", "kind", "electricity", "room", "both", "unhappy", "answer", "tiny", "operation", "coming"],
+                          "properties": {
+                            "answer": {
+                              "type": "string"
+                            },
+                            "are": {
+                              "type": "number"
+                            },
+                            "beside": {
+                              "type": "boolean"
+                            },
+                            "birds": {
+                              "type": "number"
+                            },
+                            "both": {
+                              "type": "string"
+                            },
+                            "coming": {
+                              "type": "string"
+                            },
+                            "dropped": {
+                              "type": "boolean"
+                            },
+                            "electricity": {
+                              "type": "boolean"
+                            },
+                            "else": {
+                              "type": "string"
+                            },
+                            "having": {
+                              "type": "string"
+                            },
+                            "husband": {
+                              "type": "number"
+                            },
+                            "kind": {
+                              "type": "number"
+                            },
+                            "laid": {
+                              "type": "boolean"
+                            },
+                            "naturally": {
+                              "type": "number"
+                            },
+                            "operation": {
+                              "type": "number"
+                            },
+                            "railroad": {
+                              "type": "string"
+                            },
+                            "room": {
+                              "type": "boolean"
+                            },
+                            "select": {
+                              "type": "string"
+                            },
+                            "shoulder": {
+                              "type": "number",
+                              "format": "double"
+                            },
+                            "so": {
+                              "type": "number",
+                              "format": "double"
+                            },
+                            "tiny": {
+                              "type": "string"
+                            },
+                            "tune": {
+                              "type": "number"
+                            },
+                            "unhappy": {
+                              "type": "boolean"
+                            },
+                            "when": {
+                              "type": "string"
+                            },
+                            "wolf": {
+                              "type": "string"
+                            },
+                            "you": {
+                              "type": "number"
+                            }
+                          }
+                        },
+                        "average": {
+                          "type": "boolean"
+                        },
+                        "begun": {
+                          "type": "string"
+                        },
+                        "best": {
+                          "type": "number"
+                        },
+                        "bus": {
+                          "type": "boolean"
+                        },
+                        "colony": {
+                          "type": "string"
+                        },
+                        "correct": {
+                          "type": "string"
+                        },
+                        "drove": {
+                          "type": "number",
+                          "format": "double"
+                        },
+                        "entirely": {
+                          "type": "number",
+                          "format": "double"
+                        },
+                        "globe": {
+                          "type": "boolean"
+                        },
+                        "grown": {
+                          "type": "string"
+                        },
+                        "having": {
+                          "type": "number"
+                        },
+                        "hour": {
+                          "type": "boolean"
+                        },
+                        "land": {
+                          "type": "string"
+                        },
+                        "larger": {
+                          "type": "string"
+                        },
+                        "leader": {
+                          "type": "boolean"
+                        },
+                        "nails": {
+                          "type": "string"
+                        },
+                        "neck": {
+                          "type": "number",
+                          "format": "double"
+                        },
+                        "original": {
+                          "type": "number"
+                        },
+                        "several": {
+                          "type": "number"
+                        },
+                        "shot": {
+                          "type": "boolean"
+                        },
+                        "society": {
+                          "type": "number"
+                        },
+                        "tried": {
+                          "type": "boolean"
+                        },
+                        "voyage": {
+                          "type": "boolean"
+                        },
+                        "wealth": {
+                          "type": "boolean"
+                        },
+                        "writing": {
+                          "type": "number"
+                        },
+                        "wrong": {
+                          "type": "string"
+                        }
+                      }
+                    }, {
+                      "type": "string",
+                      "enum": ["worried"]
+                    }, {
+                      "type": "number"
+                    }, {
+                      "type": "boolean"
+                    }]
+                  }
+                }, {
+                  "type": "string",
+                  "enum": ["choice"]
+                }, {
+                  "type": "number"
+                }, {
+                  "type": "boolean"
+                }]
+              }
+            },
+            "fall": {
+              "type": "string"
+            },
+            "father": {
+              "type": "string"
+            },
+            "first": {
+              "type": "string"
+            },
+            "given": {
+              "type": "boolean"
+            },
+            "house": {
+              "type": "string"
+            },
+            "interior": {
+              "type": "number",
+              "format": "double"
+            },
+            "manufacturing": {
+              "type": "boolean"
+            },
+            "minerals": {
+              "type": "boolean"
+            },
+            "observe": {
+              "type": "number"
+            },
+            "official": {
+              "type": "string"
+            },
+            "open": {
+              "type": "string"
+            },
+            "repeat": {
+              "type": "boolean"
+            },
+            "sea": {
+              "type": "boolean"
+            },
+            "serious": {
+              "type": "string"
+            },
+            "sing": {
+              "type": "number",
+              "format": "double"
+            },
+            "size": {
+              "type": "number",
+              "format": "double"
+            },
+            "statement": {
+              "type": "string"
+            },
+            "therefore": {
+              "type": "number"
+            },
+            "thrown": {
+              "type": "number"
+            },
+            "tomorrow": {
+              "type": "number",
+              "format": "double"
+            },
+            "well": {
+              "type": "number"
+            }
+          }
+        },
+        "arm": {
+          "type": "string"
+        },
+        "bridge": {
+          "type": "boolean"
+        },
+        "carefully": {
+          "type": "boolean"
+        },
+        "eventually": {
+          "type": "string"
+        },
+        "expect": {
+          "type": "string"
+        },
+        "flame": {
+          "type": "string"
+        },
+        "free": {
+          "type": "number"
+        },
+        "gray": {
+          "type": "boolean"
+        },
+        "have": {
+          "type": "string"
+        },
+        "health": {
+          "type": "boolean"
+        },
+        "hungry": {
+          "type": "number"
+        },
+        "land": {
+          "type": "string"
+        },
+        "powder": {
+          "type": "number"
+        },
+        "pupil": {
+          "type": "boolean"
+        },
+        "run": {
+          "type": "number",
+          "format": "double"
+        },
+        "tank": {
+          "type": "boolean"
+        },
+        "worried": {
+          "type": "boolean"
+        },
+        "wrapped": {
+          "type": "boolean"
+        }
+      }
+    },
+    "activity": {
+      "type": "string"
+    },
+    "article": {
+      "type": "boolean"
+    },
+    "by": {
+      "type": "boolean"
+    },
+    "dark": {
+      "type": "boolean"
+    },
+    "difficult": {
+      "type": "string"
+    },
+    "distance": {
+      "type": "number",
+      "format": "double"
+    },
+    "drink": {
+      "type": "boolean"
+    },
+    "dry": {
+      "type": "string"
+    },
+    "effort": {
+      "type": "boolean"
+    },
+    "fought": {
+      "type": "boolean"
+    },
+    "fresh": {
+      "type": "string"
+    },
+    "gravity": {
+      "type": "number"
+    },
+    "hat": {
+      "type": "number",
+      "format": "double"
+    },
+    "house": {
+      "type": "number"
+    },
+    "kids": {
+      "type": "number"
+    },
+    "later": {
+      "type": "number"
+    },
+    "range": {
+      "type": "number"
+    },
+    "season": {
+      "type": "number",
+      "format": "double"
+    },
+    "sell": {
+      "type": "string"
+    },
+    "such": {
+      "type": "number"
+    }
+  }
+}
+        }
+      }
+    }
+  }
+}

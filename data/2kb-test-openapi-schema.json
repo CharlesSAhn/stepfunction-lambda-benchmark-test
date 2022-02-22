@@ -1,0 +1,231 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "Event"
+  },
+  "paths": {},
+  "components": {
+    "schemas": {
+      "Event": {
+        "type": "object",
+        "required": ["needs", "search", "imagine", "mouth", "nails", "clearly", "camera", "drive", "around", "point"],
+        "properties": {
+          "search": {
+            "type": "object",
+            "required": ["add", "stems", "proud", "active", "discussion", "lead", "lot", "meal", "wish", "powerful", "refer", "safety", "desk", "exact", "animal", "few", "hurry", "wrapped"],
+            "properties": {
+              "desk": {
+                "type": "object",
+                "required": ["song", "might", "occur", "decide", "headed", "girl", "slope", "most", "rear", "arrange", "nuts", "managed", "gently", "cutting", "purple", "shallow", "laugh", "forty"],
+                "properties": {
+                  "gently": {
+                    "type": "object",
+                    "required": ["happen", "grow", "distance", "pile", "plate", "say", "wonderful", "body", "kill", "arrangement", "alike", "longer", "blue", "third", "discovery", "wheat", "worker", "day"],
+                    "properties": {
+                      "alike": {
+                        "type": "string"
+                      },
+                      "arrangement": {
+                        "type": "boolean"
+                      },
+                      "blue": {
+                        "type": "number"
+                      },
+                      "body": {
+                        "type": "number"
+                      },
+                      "day": {
+                        "type": "boolean"
+                      },
+                      "discovery": {
+                        "type": "string"
+                      },
+                      "distance": {
+                        "type": "number"
+                      },
+                      "grow": {
+                        "type": "boolean"
+                      },
+                      "happen": {
+                        "type": "string"
+                      },
+                      "kill": {
+                        "type": "string"
+                      },
+                      "longer": {
+                        "type": "string"
+                      },
+                      "pile": {
+                        "type": "string"
+                      },
+                      "plate": {
+                        "type": "boolean"
+                      },
+                      "say": {
+                        "type": "array",
+                        "items": {
+                          "oneOf": [{
+                            "type": "string"
+                          }, {
+                            "type": "number"
+                          }, {
+                            "type": "boolean"
+                          }]
+                        }
+                      },
+                      "third": {
+                        "type": "boolean"
+                      },
+                      "wheat": {
+                        "type": "number"
+                      },
+                      "wonderful": {
+                        "type": "string"
+                      },
+                      "worker": {
+                        "type": "boolean"
+                      }
+                    }
+                  },
+                  "arrange": {
+                    "type": "number"
+                  },
+                  "cutting": {
+                    "type": "boolean"
+                  },
+                  "decide": {
+                    "type": "number"
+                  },
+                  "forty": {
+                    "type": "boolean"
+                  },
+                  "girl": {
+                    "type": "number"
+                  },
+                  "headed": {
+                    "type": "boolean"
+                  },
+                  "laugh": {
+                    "type": "string"
+                  },
+                  "managed": {
+                    "type": "string"
+                  },
+                  "might": {
+                    "type": "boolean"
+                  },
+                  "most": {
+                    "type": "boolean"
+                  },
+                  "nuts": {
+                    "type": "boolean"
+                  },
+                  "occur": {
+                    "type": "boolean"
+                  },
+                  "purple": {
+                    "type": "string"
+                  },
+                  "rear": {
+                    "type": "boolean"
+                  },
+                  "shallow": {
+                    "type": "boolean"
+                  },
+                  "slope": {
+                    "type": "boolean"
+                  },
+                  "song": {
+                    "type": "string"
+                  }
+                }
+              },
+              "active": {
+                "type": "string"
+              },
+              "add": {
+                "type": "number"
+              },
+              "animal": {
+                "type": "string"
+              },
+              "discussion": {
+                "type": "number"
+              },
+              "exact": {
+                "type": "string"
+              },
+              "few": {
+                "type": "boolean"
+              },
+              "hurry": {
+                "type": "number"
+              },
+              "lead": {
+                "type": "string"
+              },
+              "lot": {
+                "type": "boolean"
+              },
+              "meal": {
+                "type": "boolean"
+              },
+              "powerful": {
+                "type": "string"
+              },
+              "proud": {
+                "type": "number",
+                "format": "double"
+              },
+              "refer": {
+                "type": "string"
+              },
+              "safety": {
+                "type": "boolean"
+              },
+              "stems": {
+                "type": "number"
+              },
+              "wish": {
+                "type": "string"
+              },
+              "wrapped": {
+                "type": "number",
+                "format": "double"
+              }
+            }
+          },
+          "around": {
+            "type": "boolean"
+          },
+          "camera": {
+            "type": "number"
+          },
+          "clearly": {
+            "type": "boolean"
+          },
+          "drive": {
+            "type": "boolean"
+          },
+          "imagine": {
+            "type": "string"
+          },
+          "mouth": {
+            "type": "string"
+          },
+          "nails": {
+            "type": "string"
+          },
+          "needs": {
+            "type": "boolean"
+          },
+          "point": {
+            "type": "number",
+            "format": "double"
+          }
+        }
+      }
+    }
+  }
+}

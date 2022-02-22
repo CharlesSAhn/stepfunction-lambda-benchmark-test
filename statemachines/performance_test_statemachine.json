@@ -1,0 +1,79 @@
+{
+  "Comment": "A description of my state machine",
+  "StartAt": "GetObject JSON",
+  "States": {
+    "GetObject JSON": {
+      "Type": "Task",
+      "Parameters": {
+        "Bucket": "${S3Bucket}",
+        "Key": "${s3Key}"
+      },
+      "Resource": "arn:aws:states:::aws-sdk:s3:getObject",
+      "Next": "Pass"
+    },
+    "Pass": {
+      "Type": "Pass",
+      "Next": "Iterator",
+      "Result": {
+        "count": 1000,
+        "index": 0,
+        "step": 1
+      },
+      "ResultPath": "$.iterator.Payload"
+    },
+    "Iterator": {
+      "Type": "Task",
+      "Resource": "arn:aws:states:::lambda:invoke",
+      "Next": "IsCountReached",
+      "ResultPath": "$.iterator",
+      "Parameters": {
+        "FunctionName": "${iteratorFunction}",
+        "Payload.$": "$"
+      },
+      "InputPath": "$.iterator.Payload"
+    },
+    "IsCountReached": {
+      "Type": "Choice",
+      "Choices": [
+        {
+          "Variable": "$.iterator.Payload.continue",
+          "BooleanEquals": true,
+          "Next": "Lambda Invoke"
+        }
+      ],
+      "Default": "Done"
+    },
+    "Done": {
+      "Type": "Pass",
+      "End": true
+    },
+    "Lambda Invoke": {
+      "Type": "Task",
+      "Resource": "arn:aws:states:::lambda:invoke",
+      "Parameters": {
+        "Payload.$": "$",
+        "FunctionName": "${Validation1024Function}"
+      },
+      "Retry": [
+        {
+          "ErrorEquals": [
+            "Lambda.ServiceException",
+            "Lambda.AWSLambdaException",
+            "Lambda.SdkClientException"
+          ],
+          "IntervalSeconds": 2,
+          "MaxAttempts": 6,
+          "BackoffRate": 2
+        }
+      ],
+      "InputPath": "$.Body",
+      "ResultPath": "$.validation_result",
+      "Next": "Wait"
+    },
+    "Wait": {
+      "Type": "Wait",
+      "Seconds": 2,
+      "Next": "Iterator"
+    }
+  }
+}

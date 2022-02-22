@@ -1,0 +1,82 @@
+{
+  "Comment": "A description of my state machine",
+  "StartAt": "Pass",
+  "States": {
+    "Pass": {
+      "Type": "Pass",
+      "Next": "DynamoDB GetItem"
+    },
+    "DynamoDB GetItem": {
+      "Type": "Task",
+      "Resource": "arn:aws:states:::dynamodb:getItem",
+      "Parameters": {
+        "TableName": "${table_name}",
+        "Key": {
+          "id": {
+            "S.$": "$.schema_id"
+          }
+        }
+      },
+      "ResultSelector": {
+        "schemaName.$": "$.Item.schemaName.S"
+      },
+      "ResultPath": "$.payload",
+      "Next": "DescribeSchema",
+      "Retry": [
+        {
+          "ErrorEquals": [
+            "States.ALL"
+          ],
+          "BackoffRate": 1,
+          "IntervalSeconds": 1,
+          "MaxAttempts": 5
+        }
+      ]
+    },
+    "DescribeSchema": {
+      "Type": "Task",
+      "Parameters": {
+        "RegistryName": "${schema_registry}",
+        "SchemaName.$": "$.payload.schemaName"
+      },
+      "Resource": "arn:aws:states:::aws-sdk:schemas:describeSchema",
+      "ResultSelector": {
+        "schema.$": "$.Content"
+      },
+      "ResultPath": "$.payload",
+      "Retry": [
+        {
+          "ErrorEquals": [
+            "States.ALL"
+          ],
+          "BackoffRate": 1.5,
+          "IntervalSeconds": 1,
+          "MaxAttempts": 10
+        }
+      ],
+      "Next": "Lambda Invoke"
+    },
+    "Lambda Invoke": {
+      "Type": "Task",
+      "Resource": "arn:aws:states:::lambda:invoke",
+      "OutputPath": "$.Payload",
+      "Parameters": {
+        "Payload.$": "$",
+        "FunctionName": "{lambdaFunction}"
+      },
+      "Retry": [
+        {
+          "ErrorEquals": [
+            "Lambda.ServiceException",
+            "Lambda.AWSLambdaException",
+            "Lambda.SdkClientException"
+          ],
+          "IntervalSeconds": 2,
+          "MaxAttempts": 6,
+          "BackoffRate": 2
+        }
+      ],
+      "End": true
+    }
+  }
+}

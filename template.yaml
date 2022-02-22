@@ -1,0 +1,272 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Transform: AWS::Serverless-2016-10-31
+
+Globals:
+  Function:
+    Architectures:
+      - arm64
+    Runtime: python3.9
+    Timeout: 600
+    Tracing: Active
+    Layers:
+      - !Sub "arn:aws:lambda:${AWS::Region}:580247275435:layer:LambdaInsightsExtension-Arm64:1"
+      - !Ref LambdaPowerTool
+
+Resources:
+
+  #############################################################################
+  # Layers
+  ##############################################################################
+
+  LambdaPowerTool:
+    Type: AWS::Serverless::LayerVersion
+    Properties:
+      ContentUri: layers/
+      CompatibleRuntimes:
+        - python3.8
+        - python3.9
+        - python3.7
+    Metadata:
+      BuildMethod: makefile
+    RetentionPolicy: Delete
+
+  ##############################################################################
+  # Lambda Functions
+  ##############################################################################
+
+  Validation1024Function:
+    Type: AWS::Serverless::Function
+    DependsOn:
+      - LambdaRole
+    Properties:
+      CodeUri: lambda_functions/schema_validation_1024/
+      Handler: app.lambda_handler
+      Role: !GetAtt LambdaRole.Arn
+      MemorySize: 1024
+      Environment:
+        Variables:
+          TABLE_NAME: scheme_lookup_table
+          SCHEMA_REGISTRY: myregistry
+      Events:
+        apiForLambda:
+          Type: Api
+          Properties:
+            RestApiId: !Ref Api
+            Path: /validate
+            Method: post
+
+  iteratorFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: lambda_functions/stepfunction_iterator/
+      Handler: app.lambda_handler
+      Role: !GetAtt LambdaRole.Arn
+      MemorySize: 128
+
+  ValidationOnlyFunction:
+    Type: AWS::Serverless::Function
+    DependsOn:
+      - LambdaRole
+    Properties:
+      CodeUri: lambda_functions/validation_only_function/
+      Handler: app.lambda_handler
+      Role: !GetAtt LambdaRole.Arn
+      MemorySize: 1024
+
+  ##############################################################################
+  # API Gateway
+  ##############################################################################
+
+  Api:
+    Type: AWS::Serverless::Api
+    Properties:
+      StageName: Prod
+      Name: JsonValidationLambda
+      AccessLogSetting:
+        DestinationArn: !Sub ${ApiAccessLogGroup.Arn} # This Log Group is already created within our SAM Template
+        Format: "{ 'requestId':'$context.requestId', 'ip': '$context.identity.sourceIp', 'caller':'$context.identity.caller', 'user':'$context.identity.user','requestTime':'$context.requestTime', 'xrayTraceId':'$context.xrayTraceId', 'wafResponseCode':'$context.wafResponseCode', 'httpMethod':'$context.httpMethod','resourcePath':'$context.resourcePath', 'status':'$context.status','protocol':'$context.protocol', 'responseLength':'$context.responseLength' }"
+      MethodSettings:
+        - MetricsEnabled: True
+          ResourcePath: '/*'
+          HttpMethod: '*'
+
+  ApiStepFunction:
+    Type: AWS::Serverless::Api
+    Properties:
+      StageName: Prod
+      Name: JsonValidationStepFunction
+      AccessLogSetting:
+        DestinationArn: !Sub ${ApiSFAccessLogGroup.Arn} # This Log Group is already created within our SAM Template
+        Format: "{ 'requestId':'$context.requestId', 'ip': '$context.identity.sourceIp', 'caller':'$context.identity.caller', 'user':'$context.identity.user','requestTime':'$context.requestTime', 'xrayTraceId':'$context.xrayTraceId', 'wafResponseCode':'$context.wafResponseCode', 'httpMethod':'$context.httpMethod','resourcePath':'$context.resourcePath', 'status':'$context.status','protocol':'$context.protocol', 'responseLength':'$context.responseLength' }"
+      MethodSettings:
+        - MetricsEnabled: True
+          ResourcePath: '/*'
+          HttpMethod: '*'
+
+  ApiStepFunctionExpress:
+    Type: AWS::Serverless::Api
+    Properties:
+      StageName: Prod
+      Name: JsonValidationStepFunctionExpress
+
+
+  ##############################################################################
+  # Step Functions
+  ##############################################################################
+  JsonValidationTestStateMachine:
+    Type:  AWS::Serverless::StateMachine
+    DependsOn:
+      - Validation1024Function
+      - iteratorFunction
+      - schemaLookupTable
+    Properties:
+      DefinitionUri: statemachines/performance_test_statemachine.json
+      DefinitionSubstitutions:
+        S3Bucket: json-validation-test-data
+        s3Key: 100kb-test-json.json
+        iteratorFunction: !GetAtt iteratorFunction.Arn
+        Validation1024Function: !GetAtt Validation1024Function.Arn
+      Role: !GetAtt StateMachineWorkflowRole.Arn
+
+  JsonValidationSolutionStateMachine:
+    Type:  AWS::Serverless::StateMachine
+    DependsOn:
+      - schemaLookupTable
+    Properties:
+      DefinitionUri: statemachines/validation_solution_statemachine.json
+      Role: !GetAtt StateMachineWorkflowRole.Arn
+      DefinitionSubstitutions:
+        table_name: scheme_lookup_table
+        schema_registry: myregistry
+        lambdaFunction: !GetAtt ValidationOnlyFunction.Arn
+      Events:
+        apiForStepFunction:
+          Type: Api
+          Properties:
+            RestApiId: !Ref ApiStepFunction
+            Path: /validate
+            Method: post
+      #Type: EXPRESS
+
+  JsonValidationSolutionStateMachineExpress:
+    Type:  AWS::Serverless::StateMachine
+    DependsOn:
+      - schemaLookupTable
+    Properties:
+      DefinitionUri: statemachines/validation_solution_statemachine.json
+      Role: !GetAtt StateMachineWorkflowRole.Arn
+      DefinitionSubstitutions:
+        table_name: scheme_lookup_table
+        schema_registry: myregistry
+        lambdaFunction: !GetAtt ValidationOnlyFunction.Arn
+      Events:
+        apiForStepFunction:
+          Type: Api
+          Properties:
+            RestApiId: !Ref ApiStepFunctionExpress
+            Path: /validate
+            Method: post
+      Type: EXPRESS
+
+
+
+  ##############################################################################
+  # Dynamodb
+  ##############################################################################
+  schemaLookupTable:
+    Type: AWS::Serverless::SimpleTable
+    Properties:
+      PrimaryKey:
+        Name: id
+        Type: String
+      TableName: scheme_lookup_table
+
+  ##############################################################################
+  # Log Groups
+  ##############################################################################
+  ApiAccessLogGroup:
+    Type: AWS::Logs::LogGroup
+    DependsOn: Api
+    Properties:
+      LogGroupName: !Sub /aws/apigateway/${Api}
+      RetentionInDays: 7
+
+  ApiSFAccessLogGroup:
+    Type: AWS::Logs::LogGroup
+    DependsOn: Api
+    Properties:
+      LogGroupName: !Sub /aws/apigateway/${ApiStepFunction}
+      RetentionInDays: 7
+
+
+  ##############################################################################
+  # IAM Roles
+  ##############################################################################
+  LambdaRole:
+    Type: AWS::IAM::Role
+    Properties:
+      ManagedPolicyArns:
+        - arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole
+        - arn:aws:iam::aws:policy/CloudWatchLambdaInsightsExecutionRolePolicy
+      AssumeRolePolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service:
+                - lambda.amazonaws.com
+            Action:
+              - sts:AssumeRole
+      Policies:
+        - PolicyName: StatesExecutionPolicy
+          PolicyDocument:
+            Statement:
+              - Effect: Allow
+                Action:
+                  - "schemas:DescribeSchema"
+                  - "dynamodb:GetItem"
+                Resource: "*"
+
+  StateMachineWorkflowRole:
+    Type: AWS::IAM::Role
+    Properties:
+      ManagedPolicyArns:
+        - arn:aws:iam::aws:policy/AmazonS3FullAccess
+        - arn:aws:iam::aws:policy/AWSLambda_FullAccess
+        - arn:aws:iam::aws:policy/AWSXrayFullAccess
+      AssumeRolePolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service:
+                - !Sub states.${AWS::Region}.amazonaws.com
+            Action: sts:AssumeRole
+      Policies:
+        - PolicyName: StatesExecutionPolicy
+          PolicyDocument:
+            Statement:
+              - Effect: Allow
+                Action:
+                  - "schemas:DescribeSchema"
+                  - "dynamodb:GetItem"
+                Resource: "*"
+
+  ApiCWLRoleArn:
+    Type: AWS::ApiGateway::Account
+    Properties:
+      CloudWatchRoleArn: !GetAtt CloudWatchRole.Arn
+
+  CloudWatchRole:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          Action: 'sts:AssumeRole'
+          Effect: Allow
+          Principal:
+            Service: apigateway.amazonaws.com
+      Path: /
+      ManagedPolicyArns:
+        - 'arn:aws:iam::aws:policy/service-role/AmazonAPIGatewayPushToCloudWatchLogs'

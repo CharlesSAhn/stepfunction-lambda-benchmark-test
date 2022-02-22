@@ -1,0 +1,787 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "Event"
+  },
+  "paths": {},
+  "components": {
+    "schemas": {
+      "Event": {
+        "type": "object",
+        "required": ["she", "surrounded", "animal", "creature"],
+        "properties": {
+          "animal": {
+            "type": "string"
+          },
+          "creature": {
+            "type": "array",
+            "items": {
+              "oneOf": [{
+                "type": "object",
+                "required": ["vowel", "dot", "this", "adult", "attempt"],
+                "properties": {
+                  "adult": {
+                    "type": "number"
+                  },
+                  "attempt": {
+                    "type": "array",
+                    "items": {
+                      "oneOf": [{
+                        "type": "object",
+                        "required": ["income", "folks", "toy"],
+                        "properties": {
+                          "folks": {
+                            "type": "string"
+                          },
+                          "income": {
+                            "type": "boolean"
+                          },
+                          "toy": {
+                            "type": "array",
+                            "items": {
+                              "oneOf": [{
+                                "type": "array",
+                                "items": {
+                                  "oneOf": [{
+                                    "type": "object",
+                                    "required": ["general", "fence", "picture", "become"],
+                                    "properties": {
+                                      "picture": {
+                                        "type": "object",
+                                        "required": ["car", "throat", "goose", "consider"],
+                                        "properties": {
+                                          "car": {
+                                            "type": "number"
+                                          },
+                                          "consider": {
+                                            "type": "number",
+                                            "format": "double"
+                                          },
+                                          "goose": {
+                                            "type": "string"
+                                          },
+                                          "throat": {
+                                            "type": "array",
+                                            "items": {
+                                              "oneOf": [{
+                                                "type": "array",
+                                                "items": {
+                                                  "oneOf": [{
+                                                    "type": "array",
+                                                    "items": {
+                                                      "oneOf": [{
+                                                        "type": "array",
+                                                        "items": {
+                                                          "oneOf": [{
+                                                            "type": "object",
+                                                            "required": ["tail", "grandfather", "further", "fill", "value"],
+                                                            "properties": {
+                                                              "fill": {
+                                                                "type": "array",
+                                                                "items": {
+                                                                  "oneOf": [{
+                                                                    "type": "object",
+                                                                    "required": ["difficulty", "law", "blue", "several", "dance"],
+                                                                    "properties": {
+                                                                      "dance": {
+                                                                        "type": "object",
+                                                                        "required": ["police", "idea", "explanation", "trunk"],
+                                                                        "properties": {
+                                                                          "explanation": {
+                                                                            "type": "boolean"
+                                                                          },
+                                                                          "idea": {
+                                                                            "type": "boolean"
+                                                                          },
+                                                                          "police": {
+                                                                            "type": "array",
+                                                                            "items": {
+                                                                              "oneOf": [{
+                                                                                "type": "array",
+                                                                                "items": {
+                                                                                  "oneOf": [{
+                                                                                    "type": "array",
+                                                                                    "items": {
+                                                                                      "oneOf": [{
+                                                                                        "type": "array",
+                                                                                        "items": {
+                                                                                          "oneOf": [{
+                                                                                            "type": "array",
+                                                                                            "items": {
+                                                                                              "oneOf": [{
+                                                                                                "type": "object",
+                                                                                                "required": ["climb", "fought", "wood", "massage"],
+                                                                                                "properties": {
+                                                                                                  "climb": {
+                                                                                                    "type": "boolean"
+                                                                                                  },
+                                                                                                  "fought": {
+                                                                                                    "type": "boolean"
+                                                                                                  },
+                                                                                                  "massage": {
+                                                                                                    "type": "string"
+                                                                                                  },
+                                                                                                  "wood": {
+                                                                                                    "type": "array",
+                                                                                                    "items": {
+                                                                                                      "oneOf": [{
+                                                                                                        "type": "object",
+                                                                                                        "required": ["view", "else", "afraid", "catch", "has", "floor"],
+                                                                                                        "properties": {
+                                                                                                          "floor": {
+                                                                                                            "type": "object",
+                                                                                                            "required": ["charge", "built", "matter"],
+                                                                                                            "properties": {
+                                                                                                              "matter": {
+                                                                                                                "type": "object",
+                                                                                                                "required": ["loud", "tide", "pleasure", "wife", "recall", "circus", "sun"],
+                                                                                                                "properties": {
+                                                                                                                  "tide": {
+                                                                                                                    "type": "object",
+                                                                                                                    "required": ["weigh", "flies", "thy", "fifty", "while", "listen", "ball", "hungry", "finest", "diameter", "pipe", "gentle", "join", "drawn", "between", "sky", "citizen", "given", "hay", "grow", "chair", "chief", "joined", "go", "instead", "slope", "supper", "unhappy", "route", "size", "discovery", "keep", "iron", "acres", "coach"],
+                                                                                                                    "properties": {
+                                                                                                                      "acres": {
+                                                                                                                        "type": "number",
+                                                                                                                        "format": "double"
+                                                                                                                      },
+                                                                                                                      "ball": {
+                                                                                                                        "type": "boolean"
+                                                                                                                      },
+                                                                                                                      "between": {
+                                                                                                                        "type": "number"
+                                                                                                                      },
+                                                                                                                      "chair": {
+                                                                                                                        "type": "string"
+                                                                                                                      },
+                                                                                                                      "chief": {
+                                                                                                                        "type": "string"
+                                                                                                                      },
+                                                                                                                      "citizen": {
+                                                                                                                        "type": "boolean"
+                                                                                                                      },
+                                                                                                                      "coach": {
+                                                                                                                        "type": "number"
+                                                                                                                      },
+                                                                                                                      "diameter": {
+                                                                                                                        "type": "string"
+                                                                                                                      },
+                                                                                                                      "discovery": {
+                                                                                                                        "type": "number",
+                                                                                                                        "format": "double"
+                                                                                                                      },
+                                                                                                                      "drawn": {
+                                                                                                                        "type": "number",
+                                                                                                                        "format": "double"
+                                                                                                                      },
+                                                                                                                      "fifty": {
+                                                                                                                        "type": "string"
+                                                                                                                      },
+                                                                                                                      "finest": {
+                                                                                                                        "type": "string"
+                                                                                                                      },
+                                                                                                                      "flies": {
+                                                                                                                        "type": "boolean"
+                                                                                                                      },
+                                                                                                                      "gentle": {
+                                                                                                                        "type": "string"
+                                                                                                                      },
+                                                                                                                      "given": {
+                                                                                                                        "type": "string"
+                                                                                                                      },
+                                                                                                                      "go": {
+                                                                                                                        "type": "string"
+                                                                                                                      },
+                                                                                                                      "grow": {
+                                                                                                                        "type": "number"
+                                                                                                                      },
+                                                                                                                      "hay": {
+                                                                                                                        "type": "boolean"
+                                                                                                                      },
+                                                                                                                      "hungry": {
+                                                                                                                        "type": "string"
+                                                                                                                      },
+                                                                                                                      "instead": {
+                                                                                                                        "type": "number"
+                                                                                                                      },
+                                                                                                                      "iron": {
+                                                                                                                        "type": "number",
+                                                                                                                        "format": "double"
+                                                                                                                      },
+                                                                                                                      "join": {
+                                                                                                                        "type": "boolean"
+                                                                                                                      },
+                                                                                                                      "joined": {
+                                                                                                                        "type": "number"
+                                                                                                                      },
+                                                                                                                      "keep": {
+                                                                                                                        "type": "number",
+                                                                                                                        "format": "double"
+                                                                                                                      },
+                                                                                                                      "listen": {
+                                                                                                                        "type": "string"
+                                                                                                                      },
+                                                                                                                      "pipe": {
+                                                                                                                        "type": "number"
+                                                                                                                      },
+                                                                                                                      "route": {
+                                                                                                                        "type": "array",
+                                                                                                                        "items": {
+                                                                                                                          "oneOf": [{
+                                                                                                                            "type": "object",
+                                                                                                                            "required": ["with", "nearer", "cabin", "indicate", "pig"],
+                                                                                                                            "properties": {
+                                                                                                                              "cabin": {
+                                                                                                                                "type": "number",
+                                                                                                                                "format": "double"
+                                                                                                                              },
+                                                                                                                              "indicate": {
+                                                                                                                                "type": "array",
+                                                                                                                                "items": {
+                                                                                                                                  "oneOf": [{
+                                                                                                                                    "type": "array",
+                                                                                                                                    "items": {
+                                                                                                                                      "oneOf": [{
+                                                                                                                                        "type": "array",
+                                                                                                                                        "items": {
+                                                                                                                                          "oneOf": [{
+                                                                                                                                            "type": "object",
+                                                                                                                                            "required": ["edge", "range", "film", "whose"],
+                                                                                                                                            "properties": {
+                                                                                                                                              "film": {
+                                                                                                                                                "type": "object",
+                                                                                                                                                "required": ["brush", "plane", "nine", "living", "review", "friend", "yet", "please", "discussion", "onto"],
+                                                                                                                                                "properties": {
+                                                                                                                                                  "brush": {
+                                                                                                                                                    "type": "number"
+                                                                                                                                                  },
+                                                                                                                                                  "discussion": {
+                                                                                                                                                    "type": "number"
+                                                                                                                                                  },
+                                                                                                                                                  "friend": {
+                                                                                                                                                    "type": "string"
+                                                                                                                                                  },
+                                                                                                                                                  "living": {
+                                                                                                                                                    "type": "string"
+                                                                                                                                                  },
+                                                                                                                                                  "nine": {
+                                                                                                                                                    "type": "string"
+                                                                                                                                                  },
+                                                                                                                                                  "onto": {
+                                                                                                                                                    "type": "string"
+                                                                                                                                                  },
+                                                                                                                                                  "plane": {
+                                                                                                                                                    "type": "array",
+                                                                                                                                                    "items": {
+                                                                                                                                                      "oneOf": [{
+                                                                                                                                                        "type": "array",
+                                                                                                                                                        "items": {
+                                                                                                                                                          "oneOf": [{
+                                                                                                                                                            "type": "object",
+                                                                                                                                                            "required": ["pound", "sail", "road", "smallest", "several", "decide", "force", "angry", "birds", "any", "tune"],
+                                                                                                                                                            "properties": {
+                                                                                                                                                              "several": {
+                                                                                                                                                                "type": "object",
+                                                                                                                                                                "required": ["religious", "farther", "importance", "roll", "division", "either", "street", "repeat", "chose", "noise", "join", "dance", "forty", "broken", "finally", "teach", "column", "come", "thread", "increase", "neck", "compound", "labor", "sand", "horn", "organization", "tightly", "lift", "sweet", "seems", "card"],
+                                                                                                                                                                "properties": {
+
+                                                                                                                                                                  "broken": {
+                                                                                                                                                                    "type": "number"
+                                                                                                                                                                  },
+                                                                                                                                                                  "card": {
+                                                                                                                                                                    "type": "string"
+                                                                                                                                                                  },
+                                                                                                                                                                  "chose": {
+                                                                                                                                                                    "type": "boolean"
+                                                                                                                                                                  },
+                                                                                                                                                                  "column": {
+                                                                                                                                                                    "type": "boolean"
+                                                                                                                                                                  },
+                                                                                                                                                                  "come": {
+                                                                                                                                                                    "type": "boolean"
+                                                                                                                                                                  },
+                                                                                                                                                                  "compound": {
+                                                                                                                                                                    "type": "boolean"
+                                                                                                                                                                  },
+                                                                                                                                                                  "dance": {
+                                                                                                                                                                    "type": "boolean"
+                                                                                                                                                                  },
+                                                                                                                                                                  "division": {
+                                                                                                                                                                    "type": "string"
+                                                                                                                                                                  },
+                                                                                                                                                                  "either": {
+                                                                                                                                                                    "type": "number"
+                                                                                                                                                                  },
+                                                                                                                                                                  "farther": {
+                                                                                                                                                                    "type": "number"
+                                                                                                                                                                  },
+                                                                                                                                                                  "finally": {
+                                                                                                                                                                    "type": "boolean"
+                                                                                                                                                                  },
+                                                                                                                                                                  "forty": {
+                                                                                                                                                                    "type": "number",
+                                                                                                                                                                    "format": "double"
+                                                                                                                                                                  },
+                                                                                                                                                                  "horn": {
+                                                                                                                                                                    "type": "boolean"
+                                                                                                                                                                  },
+                                                                                                                                                                  "importance": {
+                                                                                                                                                                    "type": "boolean"
+                                                                                                                                                                  },
+                                                                                                                                                                  "increase": {
+                                                                                                                                                                    "type": "number"
+                                                                                                                                                                  },
+                                                                                                                                                                  "join": {
+                                                                                                                                                                    "type": "string"
+                                                                                                                                                                  },
+                                                                                                                                                                  "labor": {
+                                                                                                                                                                    "type": "number"
+                                                                                                                                                                  },
+                                                                                                                                                                  "lift": {
+                                                                                                                                                                    "type": "number"
+                                                                                                                                                                  },
+                                                                                                                                                                  "neck": {
+                                                                                                                                                                    "type": "number"
+                                                                                                                                                                  },
+                                                                                                                                                                  "noise": {
+                                                                                                                                                                    "type": "boolean"
+                                                                                                                                                                  },
+                                                                                                                                                                  "organization": {
+                                                                                                                                                                    "type": "string"
+                                                                                                                                                                  },
+                                                                                                                                                                  "religious": {
+                                                                                                                                                                    "type": "boolean"
+                                                                                                                                                                  },
+                                                                                                                                                                  "repeat": {
+                                                                                                                                                                    "type": "boolean"
+                                                                                                                                                                  },
+                                                                                                                                                                  "roll": {
+                                                                                                                                                                    "type": "string"
+                                                                                                                                                                  },
+                                                                                                                                                                  "sand": {
+                                                                                                                                                                    "type": "string"
+                                                                                                                                                                  },
+                                                                                                                                                                  "seems": {
+                                                                                                                                                                    "type": "string"
+                                                                                                                                                                  },
+                                                                                                                                                                  "street": {
+                                                                                                                                                                    "type": "string"
+                                                                                                                                                                  },
+                                                                                                                                                                  "sweet": {
+                                                                                                                                                                    "type": "boolean"
+                                                                                                                                                                  },
+                                                                                                                                                                  "teach": {
+                                                                                                                                                                    "type": "string"
+                                                                                                                                                                  },
+                                                                                                                                                                  "thread": {
+                                                                                                                                                                    "type": "number"
+                                                                                                                                                                  },
+                                                                                                                                                                  "tightly": {
+                                                                                                                                                                    "type": "string"
+                                                                                                                                                                  }
+                                                                                                                                                                }
+                                                                                                                                                              },
+                                                                                                                                                              "angry": {
+                                                                                                                                                                "type": "boolean"
+                                                                                                                                                              },
+                                                                                                                                                              "any": {
+                                                                                                                                                                "type": "string"
+                                                                                                                                                              },
+                                                                                                                                                              "birds": {
+                                                                                                                                                                "type": "number"
+                                                                                                                                                              },
+                                                                                                                                                              "decide": {
+                                                                                                                                                                "type": "string"
+                                                                                                                                                              },
+                                                                                                                                                              "force": {
+                                                                                                                                                                "type": "number"
+                                                                                                                                                              },
+                                                                                                                                                              "pound": {
+                                                                                                                                                                "type": "boolean"
+                                                                                                                                                              },
+                                                                                                                                                              "road": {
+                                                                                                                                                                "type": "boolean"
+                                                                                                                                                              },
+                                                                                                                                                              "sail": {
+                                                                                                                                                                "type": "boolean"
+                                                                                                                                                              },
+                                                                                                                                                              "smallest": {
+                                                                                                                                                                "type": "boolean"
+                                                                                                                                                              },
+                                                                                                                                                              "tune": {
+                                                                                                                                                                "type": "string"
+                                                                                                                                                              }
+                                                                                                                                                            }
+                                                                                                                                                          }, {
+                                                                                                                                                            "type": "string",
+                                                                                                                                                            "enum": ["southern"]
+                                                                                                                                                          }, {
+                                                                                                                                                            "type": "number"
+                                                                                                                                                          }, {
+                                                                                                                                                            "type": "boolean"
+                                                                                                                                                          }]
+                                                                                                                                                        }
+                                                                                                                                                      }, {
+                                                                                                                                                        "type": "string",
+                                                                                                                                                        "enum": ["myself"]
+                                                                                                                                                      }, {
+                                                                                                                                                        "type": "number",
+                                                                                                                                                        "format": "double"
+                                                                                                                                                      }, {
+                                                                                                                                                        "type": "boolean"
+                                                                                                                                                      }]
+                                                                                                                                                    }
+                                                                                                                                                  },
+                                                                                                                                                  "please": {
+                                                                                                                                                    "type": "boolean"
+                                                                                                                                                  },
+                                                                                                                                                  "review": {
+                                                                                                                                                    "type": "number"
+                                                                                                                                                  },
+                                                                                                                                                  "yet": {
+                                                                                                                                                    "type": "string"
+                                                                                                                                                  }
+                                                                                                                                                }
+                                                                                                                                              },
+                                                                                                                                              "edge": {
+                                                                                                                                                "type": "string"
+                                                                                                                                              },
+                                                                                                                                              "range": {
+                                                                                                                                                "type": "string"
+                                                                                                                                              },
+                                                                                                                                              "whose": {
+                                                                                                                                                "type": "string"
+                                                                                                                                              }
+                                                                                                                                            }
+                                                                                                                                          }, {
+                                                                                                                                            "type": "string",
+                                                                                                                                            "enum": ["finest"]
+                                                                                                                                          }, {
+                                                                                                                                            "type": "number",
+                                                                                                                                            "format": "double"
+                                                                                                                                          }, {
+                                                                                                                                            "type": "boolean"
+                                                                                                                                          }]
+                                                                                                                                        }
+                                                                                                                                      }, {
+                                                                                                                                        "type": "string",
+                                                                                                                                        "enum": ["castle"]
+                                                                                                                                      }, {
+                                                                                                                                        "type": "number",
+                                                                                                                                        "format": "double"
+                                                                                                                                      }, {
+                                                                                                                                        "type": "boolean"
+                                                                                                                                      }]
+                                                                                                                                    }
+                                                                                                                                  }, {
+                                                                                                                                    "type": "string",
+                                                                                                                                    "enum": ["pour"]
+                                                                                                                                  }, {
+                                                                                                                                    "type": "number"
+                                                                                                                                  }, {
+                                                                                                                                    "type": "boolean"
+                                                                                                                                  }]
+                                                                                                                                }
+                                                                                                                              },
+                                                                                                                              "nearer": {
+                                                                                                                                "type": "number",
+                                                                                                                                "format": "double"
+                                                                                                                              },
+                                                                                                                              "pig": {
+                                                                                                                                "type": "boolean"
+                                                                                                                              },
+                                                                                                                              "with": {
+                                                                                                                                "type": "boolean"
+                                                                                                                              }
+                                                                                                                            }
+                                                                                                                          }, {
+                                                                                                                            "type": "string",
+                                                                                                                            "enum": ["mark"]
+                                                                                                                          }, {
+                                                                                                                            "type": "number"
+                                                                                                                          }, {
+                                                                                                                            "type": "boolean"
+                                                                                                                          }]
+                                                                                                                        }
+                                                                                                                      },
+                                                                                                                      "size": {
+                                                                                                                        "type": "number"
+                                                                                                                      },
+                                                                                                                      "sky": {
+                                                                                                                        "type": "number",
+                                                                                                                        "format": "double"
+                                                                                                                      },
+                                                                                                                      "slope": {
+                                                                                                                        "type": "string"
+                                                                                                                      },
+                                                                                                                      "supper": {
+                                                                                                                        "type": "boolean"
+                                                                                                                      },
+                                                                                                                      "thy": {
+                                                                                                                        "type": "boolean"
+                                                                                                                      },
+                                                                                                                      "unhappy": {
+                                                                                                                        "type": "string"
+                                                                                                                      },
+                                                                                                                      "weigh": {
+                                                                                                                        "type": "number",
+                                                                                                                        "format": "double"
+                                                                                                                      },
+                                                                                                                      "while": {
+                                                                                                                        "type": "boolean"
+                                                                                                                      }
+                                                                                                                    }
+                                                                                                                  },
+                                                                                                                  "circus": {
+                                                                                                                    "type": "boolean"
+                                                                                                                  },
+                                                                                                                  "loud": {
+                                                                                                                    "type": "boolean"
+                                                                                                                  },
+                                                                                                                  "pleasure": {
+                                                                                                                    "type": "number"
+                                                                                                                  },
+                                                                                                                  "recall": {
+                                                                                                                    "type": "boolean"
+                                                                                                                  },
+                                                                                                                  "sun": {
+                                                                                                                    "type": "string"
+                                                                                                                  },
+                                                                                                                  "wife": {
+                                                                                                                    "type": "boolean"
+                                                                                                                  }
+                                                                                                                }
+                                                                                                              },
+                                                                                                              "built": {
+                                                                                                                "type": "string"
+                                                                                                              },
+                                                                                                              "charge": {
+                                                                                                                "type": "boolean"
+                                                                                                              }
+                                                                                                            }
+                                                                                                          },
+                                                                                                          "afraid": {
+                                                                                                            "type": "number"
+                                                                                                          },
+                                                                                                          "catch": {
+                                                                                                            "type": "number"
+                                                                                                          },
+                                                                                                          "else": {
+                                                                                                            "type": "string"
+                                                                                                          },
+                                                                                                          "has": {
+                                                                                                            "type": "boolean"
+                                                                                                          },
+                                                                                                          "view": {
+                                                                                                            "type": "number"
+                                                                                                          }
+                                                                                                        }
+                                                                                                      }, {
+                                                                                                        "type": "string",
+                                                                                                        "enum": ["glass"]
+                                                                                                      }, {
+                                                                                                        "type": "number",
+                                                                                                        "format": "double"
+                                                                                                      }, {
+                                                                                                        "type": "boolean"
+                                                                                                      }]
+                                                                                                    }
+                                                                                                  }
+                                                                                                }
+                                                                                              }, {
+                                                                                                "type": "string",
+                                                                                                "enum": ["six"]
+                                                                                              }, {
+                                                                                                "type": "number"
+                                                                                              }, {
+                                                                                                "type": "boolean"
+                                                                                              }]
+                                                                                            }
+                                                                                          }, {
+                                                                                            "type": "string",
+                                                                                            "enum": ["sitting"]
+                                                                                          }, {
+                                                                                            "type": "number"
+                                                                                          }, {
+                                                                                            "type": "boolean"
+                                                                                          }]
+                                                                                        }
+                                                                                      }, {
+                                                                                        "type": "string",
+                                                                                        "enum": ["low"]
+                                                                                      }, {
+                                                                                        "type": "number"
+                                                                                      }, {
+                                                                                        "type": "boolean"
+                                                                                      }]
+                                                                                    }
+                                                                                  }, {
+                                                                                    "type": "string",
+                                                                                    "enum": ["spell"]
+                                                                                  }, {
+                                                                                    "type": "number",
+                                                                                    "format": "double"
+                                                                                  }, {
+                                                                                    "type": "boolean"
+                                                                                  }]
+                                                                                }
+                                                                              }, {
+                                                                                "type": "string",
+                                                                                "enum": ["greatest"]
+                                                                              }, {
+                                                                                "type": "number"
+                                                                              }, {
+                                                                                "type": "boolean"
+                                                                              }]
+                                                                            }
+                                                                          },
+                                                                          "trunk": {
+                                                                            "type": "number",
+                                                                            "format": "double"
+                                                                          }
+                                                                        }
+                                                                      },
+                                                                      "blue": {
+                                                                        "type": "number",
+                                                                        "format": "double"
+                                                                      },
+                                                                      "difficulty": {
+                                                                        "type": "boolean"
+                                                                      },
+                                                                      "law": {
+                                                                        "type": "boolean"
+                                                                      },
+                                                                      "several": {
+                                                                        "type": "boolean"
+                                                                      }
+                                                                    }
+                                                                  }, {
+                                                                    "type": "string",
+                                                                    "enum": ["plan"]
+                                                                  }, {
+                                                                    "type": "number"
+                                                                  }, {
+                                                                    "type": "boolean"
+                                                                  }]
+                                                                }
+                                                              },
+                                                              "further": {
+                                                                "type": "string"
+                                                              },
+                                                              "grandfather": {
+                                                                "type": "boolean"
+                                                              },
+                                                              "tail": {
+                                                                "type": "number"
+                                                              },
+                                                              "value": {
+                                                                "type": "string"
+                                                              }
+                                                            }
+                                                          }, {
+                                                            "type": "string",
+                                                            "enum": ["plan"]
+                                                          }, {
+                                                            "type": "number"
+                                                          }, {
+                                                            "type": "boolean"
+                                                          }]
+                                                        }
+                                                      }, {
+                                                        "type": "string",
+                                                        "enum": ["tower"]
+                                                      }, {
+                                                        "type": "number",
+                                                        "format": "double"
+                                                      }, {
+                                                        "type": "boolean"
+                                                      }]
+                                                    }
+                                                  }, {
+                                                    "type": "string",
+                                                    "enum": ["of"]
+                                                  }, {
+                                                    "type": "number"
+                                                  }, {
+                                                    "type": "boolean"
+                                                  }]
+                                                }
+                                              }, {
+                                                "type": "string",
+                                                "enum": ["eleven"]
+                                              }, {
+                                                "type": "number"
+                                              }, {
+                                                "type": "boolean"
+                                              }]
+                                            }
+                                          }
+                                        }
+                                      },
+                                      "become": {
+                                        "type": "string"
+                                      },
+                                      "fence": {
+                                        "type": "boolean"
+                                      },
+                                      "general": {
+                                        "type": "boolean"
+                                      }
+                                    }
+                                  }, {
+                                    "type": "string",
+                                    "enum": ["you"]
+                                  }, {
+                                    "type": "number"
+                                  }, {
+                                    "type": "boolean"
+                                  }]
+                                }
+                              }, {
+                                "type": "string"
+                              }, {
+                                "type": "number"
+                              }, {
+                                "type": "boolean"
+                              }]
+                            }
+                          }
+                        }
+                      }, {
+                        "type": "string"
+                      }, {
+                        "type": "number"
+                      }, {
+                        "type": "boolean"
+                      }]
+                    }
+                  },
+                  "dot": {
+                    "type": "string"
+                  },
+                  "this": {
+                    "type": "string"
+                  },
+                  "vowel": {
+                    "type": "string"
+                  }
+                }
+              }, {
+                "type": "number"
+              }, {
+                "type": "boolean"
+              }]
+            }
+          },
+          "she": {
+            "type": "number",
+            "format": "double"
+          },
+          "surrounded": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

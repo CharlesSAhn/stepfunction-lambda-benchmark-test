@@ -1,0 +1,261 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "Event"
+  },
+  "paths": {},
+  "components": {
+    "schemas": {
+      "Event": {
+            "type": "object",
+            "required": ["oldest"],
+            "properties": {
+              "oldest": {
+                "type": "object",
+                "required": ["activity", "distance", "fought", "sell", "difficult", "range", "dry", "effort", "house", "article", "drink", "off", "such", "later", "gravity", "by", "dark", "season", "hat", "fresh", "kids"],
+                "properties": {
+                  "off": {
+                    "type": "object",
+                    "required": ["carefully", "health", "eventually", "run", "section", "powder", "pupil", "expect", "hungry", "gray", "have", "land", "bridge", "worried", "flame", "free", "tank", "wrapped", "arm"],
+                    "properties": {
+                      "section": {
+                        "type": "object",
+                        "required": ["minerals", "brought", "father", "official", "house", "observe", "sea", "interior", "fall", "attack", "repeat", "manufacturing", "statement", "serious", "given", "bent", "tomorrow", "thrown", "come", "as", "size", "among", "therefore", "well", "sing", "first", "open"],
+                        "properties": {
+                          "among": {
+                            "type": "number"
+                          },
+                          "as": {
+                            "type": "number"
+                          },
+                          "attack": {
+                            "type": "string"
+                          },
+                          "bent": {
+                            "type": "number"
+                          },
+                          "brought": {
+                            "type": "number",
+                            "format": "double"
+                          },
+                          "come": {
+                            "type": "array",
+                            "items": {
+                              "oneOf": [{
+                                "type": "array",
+                                "items": {
+                                  "oneOf": [{
+                                    "type": "object"
+                                  }, {
+                                    "type": "number"
+                                  }, {
+                                    "type": "boolean"
+                                  }]
+                                }
+                              }, {
+                                "type": "boolean"
+                              }]
+                            }
+                          },
+                          "fall": {
+                            "type": "string"
+                          },
+                          "father": {
+                            "type": "string"
+                          },
+                          "first": {
+                            "type": "string"
+                          },
+                          "given": {
+                            "type": "boolean"
+                          },
+                          "house": {
+                            "type": "string"
+                          },
+                          "interior": {
+                            "type": "number",
+                            "format": "double"
+                          },
+                          "manufacturing": {
+                            "type": "boolean"
+                          },
+                          "minerals": {
+                            "type": "boolean"
+                          },
+                          "observe": {
+                            "type": "number"
+                          },
+                          "official": {
+                            "type": "string"
+                          },
+                          "open": {
+                            "type": "string"
+                          },
+                          "repeat": {
+                            "type": "boolean"
+                          },
+                          "sea": {
+                            "type": "boolean"
+                          },
+                          "serious": {
+                            "type": "string"
+                          },
+                          "sing": {
+                            "type": "number",
+                            "format": "double"
+                          },
+                          "size": {
+                            "type": "number",
+                            "format": "double"
+                          },
+                          "statement": {
+                            "type": "string"
+                          },
+                          "therefore": {
+                            "type": "number"
+                          },
+                          "thrown": {
+                            "type": "number"
+                          },
+                          "tomorrow": {
+                            "type": "number",
+                            "format": "double"
+                          },
+                          "well": {
+                            "type": "number"
+                          }
+                        }
+                      },
+                      "arm": {
+                        "type": "string"
+                      },
+                      "bridge": {
+                        "type": "boolean"
+                      },
+                      "carefully": {
+                        "type": "boolean"
+                      },
+                      "eventually": {
+                        "type": "string"
+                      },
+                      "expect": {
+                        "type": "string"
+                      },
+                      "flame": {
+                        "type": "string"
+                      },
+                      "free": {
+                        "type": "number"
+                      },
+                      "gray": {
+                        "type": "boolean"
+                      },
+                      "have": {
+                        "type": "string"
+                      },
+                      "health": {
+                        "type": "boolean"
+                      },
+                      "hungry": {
+                        "type": "number"
+                      },
+                      "land": {
+                        "type": "string"
+                      },
+                      "powder": {
+                        "type": "number"
+                      },
+                      "pupil": {
+                        "type": "boolean"
+                      },
+                      "run": {
+                        "type": "number",
+                        "format": "double"
+                      },
+                      "tank": {
+                        "type": "boolean"
+                      },
+                      "worried": {
+                        "type": "boolean"
+                      },
+                      "wrapped": {
+                        "type": "boolean"
+                      }
+                    }
+                  },
+                  "activity": {
+                    "type": "string"
+                  },
+                  "article": {
+                    "type": "boolean"
+                  },
+                  "by": {
+                    "type": "boolean"
+                  },
+                  "dark": {
+                    "type": "boolean"
+                  },
+                  "difficult": {
+                    "type": "string"
+                  },
+                  "distance": {
+                    "type": "number",
+                    "format": "double"
+                  },
+                  "drink": {
+                    "type": "boolean"
+                  },
+                  "dry": {
+                    "type": "string"
+                  },
+                  "effort": {
+                    "type": "boolean"
+                  },
+                  "fought": {
+                    "type": "boolean"
+                  },
+                  "fresh": {
+                    "type": "string"
+                  },
+                  "gravity": {
+                    "type": "number"
+                  },
+                  "hat": {
+                    "type": "number",
+                    "format": "double"
+                  },
+                  "house": {
+                    "type": "number"
+                  },
+                  "kids": {
+                    "type": "number"
+                  },
+                  "later": {
+                    "type": "number"
+                  },
+                  "range": {
+                    "type": "number"
+                  },
+                  "season": {
+                    "type": "number",
+                    "format": "double"
+                  },
+                  "sell": {
+                    "type": "string"
+                  },
+                  "such": {
+                    "type": "number"
+                  }
+                }
+              }
+            }
+          },
+          "schema_id": {
+            "type": "number"
+          }
+        }
+      }
+
+
+}

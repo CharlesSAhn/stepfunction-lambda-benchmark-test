@@ -1,0 +1,3727 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "Event"
+  },
+  "paths": {},
+  "components": {
+    "schemas": {
+      "Event": {
+        "type": "object",
+        "required": ["she", "surrounded", "animal", "creature"],
+        "properties": {
+          "animal": {
+            "type": "string"
+          },
+          "creature": {
+            "type": "array",
+            "items": {
+              "oneOf": [{
+                "type": "object",
+                "required": ["vowel", "dot", "this", "adult", "attempt"],
+                "properties": {
+                  "adult": {
+                    "type": "number"
+                  },
+                  "attempt": {
+                    "type": "array",
+                    "items": {
+                      "oneOf": [{
+                        "type": "object",
+                        "required": ["income", "folks", "toy"],
+                        "properties": {
+                          "folks": {
+                            "type": "string"
+                          },
+                          "income": {
+                            "type": "boolean"
+                          },
+                          "toy": {
+                            "type": "array",
+                            "items": {
+                              "oneOf": [{
+                                "type": "array",
+                                "items": {
+                                  "oneOf": [{
+                                    "type": "object",
+                                    "required": ["general", "fence", "picture", "become"],
+                                    "properties": {
+                                      "picture": {
+                                        "$ref": "#/components/schemas/Picture"
+                                      },
+                                      "become": {
+                                        "type": "string"
+                                      },
+                                      "fence": {
+                                        "type": "boolean"
+                                      },
+                                      "general": {
+                                        "type": "boolean"
+                                      }
+                                    }
+                                  }, {
+                                    "type": "string",
+                                    "enum": ["you"]
+                                  }, {
+                                    "type": "number"
+                                  }, {
+                                    "type": "boolean"
+                                  }]
+                                }
+                              }, {
+                                "type": "string",
+                                "enum": ["generally"]
+                              }, {
+                                "type": "number"
+                              }, {
+                                "type": "boolean"
+                              }]
+                            }
+                          }
+                        }
+                      }, {
+                        "type": "string",
+                        "enum": ["potatoes"]
+                      }, {
+                        "type": "number"
+                      }, {
+                        "type": "boolean"
+                      }]
+                    }
+                  },
+                  "dot": {
+                    "type": "string"
+                  },
+                  "this": {
+                    "type": "string"
+                  },
+                  "vowel": {
+                    "type": "string"
+                  }
+                }
+              }, {
+                "type": "number"
+              }, {
+                "type": "boolean"
+              }]
+            }
+          },
+          "she": {
+            "type": "number",
+            "format": "double"
+          },
+          "surrounded": {
+            "type": "string"
+          }
+        }
+      },
+      "Picture": {
+        "type": "object",
+        "required": ["car", "throat", "goose", "consider"],
+        "properties": {
+          "car": {
+            "type": "number"
+          },
+          "consider": {
+            "type": "number",
+            "format": "double"
+          },
+          "goose": {
+            "type": "string"
+          },
+          "throat": {
+            "type": "array",
+            "items": {
+              "oneOf": [{
+                "type": "array",
+                "items": {
+                  "oneOf": [{
+                    "type": "array",
+                    "items": {
+                      "oneOf": [{
+                        "type": "array",
+                        "items": {
+                          "oneOf": [{
+                            "type": "object",
+                            "required": ["tail", "grandfather", "further", "fill", "value"],
+                            "properties": {
+                              "fill": {
+                                "type": "array",
+                                "items": {
+                                  "oneOf": [{
+                                    "type": "object",
+                                    "required": ["difficulty", "law", "blue", "several", "dance"],
+                                    "properties": {
+                                      "dance": {
+                                        "$ref": "#/components/schemas/Dance"
+                                      },
+                                      "blue": {
+                                        "type": "number",
+                                        "format": "double"
+                                      },
+                                      "difficulty": {
+                                        "type": "boolean"
+                                      },
+                                      "law": {
+                                        "type": "boolean"
+                                      },
+                                      "several": {
+                                        "type": "boolean"
+                                      }
+                                    }
+                                  }, {
+                                    "type": "string",
+                                    "enum": ["plan"]
+                                  }, {
+                                    "type": "number"
+                                  }, {
+                                    "type": "boolean"
+                                  }]
+                                }
+                              },
+                              "further": {
+                                "type": "string"
+                              },
+                              "grandfather": {
+                                "type": "boolean"
+                              },
+                              "tail": {
+                                "type": "number"
+                              },
+                              "value": {
+                                "type": "string"
+                              }
+                            }
+                          }, {
+                            "type": "string",
+                            "enum": ["plan"]
+                          }, {
+                            "type": "number"
+                          }, {
+                            "type": "boolean"
+                          }]
+                        }
+                      }, {
+                        "type": "string",
+                        "enum": ["tower"]
+                      }, {
+                        "type": "number",
+                        "format": "double"
+                      }, {
+                        "type": "boolean"
+                      }]
+                    }
+                  }, {
+                    "type": "string",
+                    "enum": ["of"]
+                  }, {
+                    "type": "number"
+                  }, {
+                    "type": "boolean"
+                  }]
+                }
+              }, {
+                "type": "string",
+                "enum": ["eleven"]
+              }, {
+                "type": "number"
+              }, {
+                "type": "boolean"
+              }]
+            }
+          }
+        }
+      },
+      "Dance": {
+        "type": "object",
+        "required": ["police", "idea", "explanation", "trunk"],
+        "properties": {
+          "explanation": {
+            "type": "boolean"
+          },
+          "idea": {
+            "type": "boolean"
+          },
+          "police": {
+            "type": "array",
+            "items": {
+              "oneOf": [{
+                "type": "array",
+                "items": {
+                  "oneOf": [{
+                    "type": "array",
+                    "items": {
+                      "oneOf": [{
+                        "type": "array",
+                        "items": {
+                          "oneOf": [{
+                            "type": "array",
+                            "items": {
+                              "oneOf": [{
+                                "type": "object",
+                                "required": ["climb", "fought", "wood", "massage"],
+                                "properties": {
+                                  "climb": {
+                                    "type": "boolean"
+                                  },
+                                  "fought": {
+                                    "type": "boolean"
+                                  },
+                                  "massage": {
+                                    "type": "string"
+                                  },
+                                  "wood": {
+                                    "type": "array",
+                                    "items": {
+                                      "oneOf": [{
+                                        "type": "object",
+                                        "required": ["view", "else", "afraid", "catch", "has", "floor"],
+                                        "properties": {
+                                          "floor": {
+                                            "$ref": "#/components/schemas/Floor"
+                                          },
+                                          "afraid": {
+                                            "type": "number"
+                                          },
+                                          "catch": {
+                                            "type": "number"
+                                          },
+                                          "else": {
+                                            "type": "string"
+                                          },
+                                          "has": {
+                                            "type": "boolean"
+                                          },
+                                          "view": {
+                                            "type": "number"
+                                          }
+                                        }
+                                      }, {
+                                        "type": "string",
+                                        "enum": ["glass"]
+                                      }, {
+                                        "type": "number",
+                                        "format": "double"
+                                      }, {
+                                        "type": "boolean"
+                                      }]
+                                    }
+                                  }
+                                }
+                              }, {
+                                "type": "string",
+                                "enum": ["six"]
+                              }, {
+                                "type": "number"
+                              }, {
+                                "type": "boolean"
+                              }]
+                            }
+                          }, {
+                            "type": "string",
+                            "enum": ["sitting"]
+                          }, {
+                            "type": "number"
+                          }, {
+                            "type": "boolean"
+                          }]
+                        }
+                      }, {
+                        "type": "string",
+                        "enum": ["low"]
+                      }, {
+                        "type": "number"
+                      }, {
+                        "type": "boolean"
+                      }]
+                    }
+                  }, {
+                    "type": "string",
+                    "enum": ["spell"]
+                  }, {
+                    "type": "number",
+                    "format": "double"
+                  }, {
+                    "type": "boolean"
+                  }]
+                }
+              }, {
+                "type": "string",
+                "enum": ["greatest"]
+              }, {
+                "type": "number"
+              }, {
+                "type": "boolean"
+              }]
+            }
+          },
+          "trunk": {
+            "type": "number",
+            "format": "double"
+          }
+        }
+      },
+      "Floor": {
+        "type": "object",
+        "required": ["charge", "built", "matter"],
+        "properties": {
+          "matter": {
+            "$ref": "#/components/schemas/Matter"
+          },
+          "built": {
+            "type": "string"
+          },
+          "charge": {
+            "type": "boolean"
+          }
+        }
+      },
+      "Matter": {
+        "type": "object",
+        "required": ["loud", "tide", "pleasure", "wife", "recall", "circus", "sun"],
+        "properties": {
+          "tide": {
+            "$ref": "#/components/schemas/Tide"
+          },
+          "circus": {
+            "type": "boolean"
+          },
+          "loud": {
+            "type": "boolean"
+          },
+          "pleasure": {
+            "type": "number"
+          },
+          "recall": {
+            "type": "boolean"
+          },
+          "sun": {
+            "type": "string"
+          },
+          "wife": {
+            "type": "boolean"
+          }
+        }
+      },
+      "Tide": {
+        "type": "object",
+        "required": ["weigh", "flies", "thy", "fifty", "while", "listen", "ball", "hungry", "finest", "diameter", "pipe", "gentle", "join", "drawn", "between", "sky", "citizen", "given", "hay", "grow", "chair", "chief", "joined", "go", "instead", "slope", "supper", "unhappy", "route", "size", "discovery", "keep", "iron", "acres", "coach"],
+        "properties": {
+          "acres": {
+            "type": "number",
+            "format": "double"
+          },
+          "ball": {
+            "type": "boolean"
+          },
+          "between": {
+            "type": "number"
+          },
+          "chair": {
+            "type": "string"
+          },
+          "chief": {
+            "type": "string"
+          },
+          "citizen": {
+            "type": "boolean"
+          },
+          "coach": {
+            "type": "number"
+          },
+          "diameter": {
+            "type": "string"
+          },
+          "discovery": {
+            "type": "number",
+            "format": "double"
+          },
+          "drawn": {
+            "type": "number",
+            "format": "double"
+          },
+          "fifty": {
+            "type": "string"
+          },
+          "finest": {
+            "type": "string"
+          },
+          "flies": {
+            "type": "boolean"
+          },
+          "gentle": {
+            "type": "string"
+          },
+          "given": {
+            "type": "string"
+          },
+          "go": {
+            "type": "string"
+          },
+          "grow": {
+            "type": "number"
+          },
+          "hay": {
+            "type": "boolean"
+          },
+          "hungry": {
+            "type": "string"
+          },
+          "instead": {
+            "type": "number"
+          },
+          "iron": {
+            "type": "number",
+            "format": "double"
+          },
+          "join": {
+            "type": "boolean"
+          },
+          "joined": {
+            "type": "number"
+          },
+          "keep": {
+            "type": "number",
+            "format": "double"
+          },
+          "listen": {
+            "type": "string"
+          },
+          "pipe": {
+            "type": "number"
+          },
+          "route": {
+            "type": "array",
+            "items": {
+              "oneOf": [{
+                "type": "object",
+                "required": ["with", "nearer", "cabin", "indicate", "pig"],
+                "properties": {
+                  "cabin": {
+                    "type": "number",
+                    "format": "double"
+                  },
+                  "indicate": {
+                    "type": "array",
+                    "items": {
+                      "oneOf": [{
+                        "type": "array",
+                        "items": {
+                          "oneOf": [{
+                            "type": "array",
+                            "items": {
+                              "oneOf": [{
+                                "type": "object",
+                                "required": ["edge", "range", "film", "whose"],
+                                "properties": {
+                                  "film": {
+                                    "$ref": "#/components/schemas/Film"
+                                  },
+                                  "edge": {
+                                    "type": "string"
+                                  },
+                                  "range": {
+                                    "type": "string"
+                                  },
+                                  "whose": {
+                                    "type": "string"
+                                  }
+                                }
+                              }, {
+                                "type": "string",
+                                "enum": ["finest"]
+                              }, {
+                                "type": "number",
+                                "format": "double"
+                              }, {
+                                "type": "boolean"
+                              }]
+                            }
+                          }, {
+                            "type": "string",
+                            "enum": ["castle"]
+                          }, {
+                            "type": "number",
+                            "format": "double"
+                          }, {
+                            "type": "boolean"
+                          }]
+                        }
+                      }, {
+                        "type": "string",
+                        "enum": ["pour"]
+                      }, {
+                        "type": "number"
+                      }, {
+                        "type": "boolean"
+                      }]
+                    }
+                  },
+                  "nearer": {
+                    "type": "number",
+                    "format": "double"
+                  },
+                  "pig": {
+                    "type": "boolean"
+                  },
+                  "with": {
+                    "type": "boolean"
+                  }
+                }
+              }, {
+                "type": "string",
+                "enum": ["mark"]
+              }, {
+                "type": "number"
+              }, {
+                "type": "boolean"
+              }]
+            }
+          },
+          "size": {
+            "type": "number"
+          },
+          "sky": {
+            "type": "number",
+            "format": "double"
+          },
+          "slope": {
+            "type": "string"
+          },
+          "supper": {
+            "type": "boolean"
+          },
+          "thy": {
+            "type": "boolean"
+          },
+          "unhappy": {
+            "type": "string"
+          },
+          "weigh": {
+            "type": "number",
+            "format": "double"
+          },
+          "while": {
+            "type": "boolean"
+          }
+        }
+      },
+      "Film": {
+        "type": "object",
+        "required": ["brush", "plane", "nine", "living", "concerned", "review", "friend", "yet", "please", "discussion", "onto"],
+        "properties": {
+          "brush": {
+            "type": "number"
+          },
+          "concerned": {
+            "type": "boolean"
+          },
+          "discussion": {
+            "type": "number"
+          },
+          "friend": {
+            "type": "string"
+          },
+          "living": {
+            "type": "string"
+          },
+          "nine": {
+            "type": "string"
+          },
+          "onto": {
+            "type": "string"
+          },
+          "plane": {
+            "type": "array",
+            "items": {
+              "oneOf": [{
+                "type": "array",
+                "items": {
+                  "oneOf": [{
+                    "type": "object",
+                    "required": ["pound", "sail", "road", "smallest", "several", "decide", "force", "angry", "birds", "any", "tune"],
+                    "properties": {
+                      "several": {
+                        "$ref": "#/components/schemas/Several"
+                      },
+                      "angry": {
+                        "type": "boolean"
+                      },
+                      "any": {
+                        "type": "string"
+                      },
+                      "birds": {
+                        "type": "number"
+                      },
+                      "decide": {
+                        "type": "string"
+                      },
+                      "force": {
+                        "type": "number"
+                      },
+                      "pound": {
+                        "type": "boolean"
+                      },
+                      "road": {
+                        "type": "boolean"
+                      },
+                      "sail": {
+                        "type": "boolean"
+                      },
+                      "smallest": {
+                        "type": "boolean"
+                      },
+                      "tune": {
+                        "type": "string"
+                      }
+                    }
+                  }, {
+                    "type": "string",
+                    "enum": ["southern"]
+                  }, {
+                    "type": "number"
+                  }, {
+                    "type": "boolean"
+                  }]
+                }
+              }, {
+                "type": "string",
+                "enum": ["myself"]
+              }, {
+                "type": "number",
+                "format": "double"
+              }, {
+                "type": "boolean"
+              }]
+            }
+          },
+          "please": {
+            "type": "boolean"
+          },
+          "review": {
+            "type": "number"
+          },
+          "yet": {
+            "type": "string"
+          }
+        }
+      },
+      "Several": {
+        "type": "object",
+        "required": ["religious", "farther", "importance", "roll", "division", "either", "arrange", "street", "repeat", "chose", "noise", "join", "dance", "forty", "broken", "finally", "teach", "column", "come", "thread", "increase", "neck", "compound", "labor", "sand", "horn", "organization", "tightly", "lift", "sweet", "seems", "card"],
+        "properties": {
+          "arrange": {
+            "type": "array",
+            "items": {
+              "oneOf": [{
+                "type": "object",
+                "required": ["average", "chapter", "maybe", "happy", "mental", "attempt", "pig", "apple", "later", "same", "her", "identity", "of", "root", "steam", "usually", "steady", "roof", "spell", "audience", "star", "social", "length", "war", "classroom", "neck", "master", "minute", "stay", "measure", "selection", "dawn", "sweet", "hurt", "women"],
+                "properties": {
+                  "average": {
+                    "$ref": "#/components/schemas/Average"
+                  },
+                  "apple": {
+                    "type": "boolean"
+                  },
+                  "attempt": {
+                    "type": "boolean"
+                  },
+                  "audience": {
+                    "type": "boolean"
+                  },
+                  "chapter": {
+                    "type": "boolean"
+                  },
+                  "classroom": {
+                    "type": "number"
+                  },
+                  "dawn": {
+                    "type": "number",
+                    "format": "double"
+                  },
+                  "happy": {
+                    "type": "number"
+                  },
+                  "her": {
+                    "type": "number"
+                  },
+                  "hurt": {
+                    "type": "string"
+                  },
+                  "identity": {
+                    "type": "string"
+                  },
+                  "later": {
+                    "type": "number",
+                    "format": "double"
+                  },
+                  "length": {
+                    "type": "string"
+                  },
+                  "master": {
+                    "type": "boolean"
+                  },
+                  "maybe": {
+                    "type": "string"
+                  },
+                  "measure": {
+                    "type": "boolean"
+                  },
+                  "mental": {
+                    "type": "boolean"
+                  },
+                  "minute": {
+                    "type": "string"
+                  },
+                  "neck": {
+                    "type": "boolean"
+                  },
+                  "of": {
+                    "type": "string"
+                  },
+                  "pig": {
+                    "type": "boolean"
+                  },
+                  "roof": {
+                    "type": "boolean"
+                  },
+                  "root": {
+                    "type": "boolean"
+                  },
+                  "same": {
+                    "type": "string"
+                  },
+                  "selection": {
+                    "type": "boolean"
+                  },
+                  "social": {
+                    "type": "number"
+                  },
+                  "spell": {
+                    "type": "string"
+                  },
+                  "star": {
+                    "type": "boolean"
+                  },
+                  "stay": {
+                    "type": "string"
+                  },
+                  "steady": {
+                    "type": "boolean"
+                  },
+                  "steam": {
+                    "type": "number"
+                  },
+                  "sweet": {
+                    "type": "string"
+                  },
+                  "usually": {
+                    "type": "string"
+                  },
+                  "war": {
+                    "type": "boolean"
+                  },
+                  "women": {
+                    "type": "number",
+                    "format": "double"
+                  }
+                }
+              }, {
+                "type": "string",
+                "enum": ["street"]
+              }, {
+                "type": "number"
+              }, {
+                "type": "boolean"
+              }]
+            }
+          },
+          "broken": {
+            "type": "number"
+          },
+          "card": {
+            "type": "string"
+          },
+          "chose": {
+            "type": "boolean"
+          },
+          "column": {
+            "type": "boolean"
+          },
+          "come": {
+            "type": "boolean"
+          },
+          "compound": {
+            "type": "boolean"
+          },
+          "dance": {
+            "type": "boolean"
+          },
+          "division": {
+            "type": "string"
+          },
+          "either": {
+            "type": "number"
+          },
+          "farther": {
+            "type": "number"
+          },
+          "finally": {
+            "type": "boolean"
+          },
+          "forty": {
+            "type": "number",
+            "format": "double"
+          },
+          "horn": {
+            "type": "boolean"
+          },
+          "importance": {
+            "type": "boolean"
+          },
+          "increase": {
+            "type": "number"
+          },
+          "join": {
+            "type": "string"
+          },
+          "labor": {
+            "type": "number"
+          },
+          "lift": {
+            "type": "number"
+          },
+          "neck": {
+            "type": "number"
+          },
+          "noise": {
+            "type": "boolean"
+          },
+          "organization": {
+            "type": "string"
+          },
+          "religious": {
+            "type": "boolean"
+          },
+          "repeat": {
+            "type": "boolean"
+          },
+          "roll": {
+            "type": "string"
+          },
+          "sand": {
+            "type": "string"
+          },
+          "seems": {
+            "type": "string"
+          },
+          "street": {
+            "type": "string"
+          },
+          "sweet": {
+            "type": "boolean"
+          },
+          "teach": {
+            "type": "string"
+          },
+          "thread": {
+            "type": "number"
+          },
+          "tightly": {
+            "type": "string"
+          }
+        }
+      },
+      "Average": {
+        "type": "object",
+        "required": ["flies", "colony", "eager", "independent", "arrow", "young", "advice", "wagon", "roll", "eventually", "around", "cage", "hour", "price", "busy", "easily", "serious", "trouble", "tobacco", "shorter", "balloon", "pain", "bottom", "heart", "jack", "whatever", "sharp", "never", "unhappy", "vowel", "atomic", "meat", "therefore", "did", "simply"],
+        "properties": {
+          "advice": {
+            "type": "number"
+          },
+          "around": {
+            "type": "string"
+          },
+          "arrow": {
+            "type": "boolean"
+          },
+          "atomic": {
+            "type": "string"
+          },
+          "balloon": {
+            "type": "number"
+          },
+          "bottom": {
+            "type": "string"
+          },
+          "busy": {
+            "type": "number"
+          },
+          "cage": {
+            "type": "boolean"
+          },
+          "colony": {
+            "type": "number",
+            "format": "double"
+          },
+          "did": {
+            "type": "string"
+          },
+          "eager": {
+            "type": "number",
+            "format": "double"
+          },
+          "easily": {
+            "type": "string"
+          },
+          "eventually": {
+            "type": "number"
+          },
+          "flies": {
+            "type": "string"
+          },
+          "heart": {
+            "type": "boolean"
+          },
+          "hour": {
+            "type": "number"
+          },
+          "independent": {
+            "type": "string"
+          },
+          "jack": {
+            "type": "boolean"
+          },
+          "meat": {
+            "type": "number"
+          },
+          "never": {
+            "type": "number",
+            "format": "double"
+          },
+          "pain": {
+            "type": "boolean"
+          },
+          "price": {
+            "type": "array",
+            "items": {
+              "oneOf": [{
+                "type": "object",
+                "required": ["birthday", "gun", "motor", "no", "hundred", "passage", "bottle", "do", "inside", "nearest", "poor", "forgotten", "gulf", "missing", "tip", "massage", "write", "smooth", "chest", "process", "middle", "surface", "carefully", "double", "outer", "rapidly", "eye", "ranch", "straight", "swing", "spin", "fresh", "wore", "become", "quarter"],
+                "properties": {
+                  "become": {
+                    "type": "number"
+                  },
+                  "birthday": {
+                    "type": "string"
+                  },
+                  "bottle": {
+                    "type": "string"
+                  },
+                  "carefully": {
+                    "type": "boolean"
+                  },
+                  "chest": {
+                    "type": "string"
+                  },
+                  "do": {
+                    "type": "number"
+                  },
+                  "double": {
+                    "type": "boolean"
+                  },
+                  "eye": {
+                    "type": "array",
+                    "items": {
+                      "oneOf": [{
+                        "type": "object",
+                        "required": ["standard", "other", "additional", "stairs", "proper", "enemy", "trick", "building", "tune", "hold", "too", "men", "grain", "silence", "relationship", "tales", "funny", "wherever", "roof", "move", "imagine", "storm", "go", "control", "real", "lack", "square", "letter", "science", "driven", "lady", "purple", "spoken", "sugar", "swim"],
+                        "properties": {
+                          "additional": {
+                            "type": "string"
+                          },
+                          "building": {
+                            "type": "string"
+                          },
+                          "control": {
+                            "type": "number"
+                          },
+                          "driven": {
+                            "type": "number"
+                          },
+                          "enemy": {
+                            "type": "boolean"
+                          },
+                          "funny": {
+                            "type": "string"
+                          },
+                          "go": {
+                            "type": "string"
+                          },
+                          "grain": {
+                            "type": "boolean"
+                          },
+                          "hold": {
+                            "type": "string"
+                          },
+                          "imagine": {
+                            "type": "number"
+                          },
+                          "lack": {
+                            "type": "string"
+                          },
+                          "lady": {
+                            "type": "string"
+                          },
+                          "letter": {
+                            "type": "string"
+                          },
+                          "men": {
+                            "type": "string"
+                          },
+                          "move": {
+                            "type": "boolean"
+                          },
+                          "other": {
+                            "type": "string"
+                          },
+                          "proper": {
+                            "type": "number"
+                          },
+                          "purple": {
+                            "type": "number",
+                            "format": "double"
+                          },
+                          "real": {
+                            "type": "number",
+                            "format": "double"
+                          },
+                          "relationship": {
+                            "type": "number",
+                            "format": "double"
+                          },
+                          "roof": {
+                            "type": "number"
+                          },
+                          "science": {
+                            "type": "boolean"
+                          },
+                          "silence": {
+                            "type": "string"
+                          },
+                          "spoken": {
+                            "type": "boolean"
+                          },
+                          "square": {
+                            "type": "boolean"
+                          },
+                          "stairs": {
+                            "type": "boolean"
+                          },
+                          "standard": {
+                            "type": "boolean"
+                          },
+                          "storm": {
+                            "type": "array",
+                            "items": {
+                              "oneOf": [{
+                                "type": "array",
+                                "items": {
+                                  "oneOf": [{
+                                    "type": "object",
+                                    "required": ["continent", "some", "southern", "brought", "danger", "pie", "two", "local", "thick", "ball", "hair", "same", "too", "feathers", "today", "molecular", "somehow", "directly", "oxygen", "key", "they", "herd", "owner", "making", "might", "is", "rhythm", "structure", "exist", "airplane", "duty", "gave", "apartment", "pony"],
+                                    "properties": {
+                                      "somehow": {
+                                        "$ref": "#/components/schemas/Somehow"
+                                      },
+                                      "airplane": {
+                                        "type": "number",
+                                        "format": "double"
+                                      },
+                                      "apartment": {
+                                        "type": "number"
+                                      },
+                                      "ball": {
+                                        "type": "boolean"
+                                      },
+                                      "brought": {
+                                        "type": "string"
+                                      },
+                                      "continent": {
+                                        "type": "boolean"
+                                      },
+                                      "danger": {
+                                        "type": "string"
+                                      },
+                                      "directly": {
+                                        "type": "number"
+                                      },
+                                      "duty": {
+                                        "type": "string"
+                                      },
+                                      "exist": {
+                                        "type": "number"
+                                      },
+                                      "feathers": {
+                                        "type": "number"
+                                      },
+                                      "gave": {
+                                        "type": "string"
+                                      },
+                                      "hair": {
+                                        "type": "boolean"
+                                      },
+                                      "herd": {
+                                        "type": "boolean"
+                                      },
+                                      "is": {
+                                        "type": "number"
+                                      },
+                                      "key": {
+                                        "type": "boolean"
+                                      },
+                                      "local": {
+                                        "type": "boolean"
+                                      },
+                                      "making": {
+                                        "type": "string"
+                                      },
+                                      "might": {
+                                        "type": "boolean"
+                                      },
+                                      "molecular": {
+                                        "type": "string"
+                                      },
+                                      "owner": {
+                                        "type": "number"
+                                      },
+                                      "oxygen": {
+                                        "type": "number"
+                                      },
+                                      "pie": {
+                                        "type": "number",
+                                        "format": "double"
+                                      },
+                                      "pony": {
+                                        "type": "string"
+                                      },
+                                      "rhythm": {
+                                        "type": "boolean"
+                                      },
+                                      "same": {
+                                        "type": "boolean"
+                                      },
+                                      "some": {
+                                        "type": "boolean"
+                                      },
+                                      "southern": {
+                                        "type": "number"
+                                      },
+                                      "structure": {
+                                        "type": "number"
+                                      },
+                                      "they": {
+                                        "type": "string"
+                                      },
+                                      "thick": {
+                                        "type": "boolean"
+                                      },
+                                      "today": {
+                                        "type": "string"
+                                      },
+                                      "too": {
+                                        "type": "string"
+                                      },
+                                      "two": {
+                                        "type": "string"
+                                      }
+                                    }
+                                  }, {
+                                    "type": "string",
+                                    "enum": ["book"]
+                                  }, {
+                                    "type": "number"
+                                  }, {
+                                    "type": "boolean"
+                                  }]
+                                }
+                              }, {
+                                "type": "string",
+                                "enum": ["visitor"]
+                              }, {
+                                "type": "number"
+                              }, {
+                                "type": "boolean"
+                              }]
+                            }
+                          },
+                          "sugar": {
+                            "type": "number"
+                          },
+                          "swim": {
+                            "type": "number"
+                          },
+                          "tales": {
+                            "type": "boolean"
+                          },
+                          "too": {
+                            "type": "string"
+                          },
+                          "trick": {
+                            "type": "boolean"
+                          },
+                          "tune": {
+                            "type": "number",
+                            "format": "double"
+                          },
+                          "wherever": {
+                            "type": "boolean"
+                          }
+                        }
+                      }, {
+                        "type": "string",
+                        "enum": ["plane"]
+                      }, {
+                        "type": "number"
+                      }, {
+                        "type": "boolean"
+                      }]
+                    }
+                  },
+                  "forgotten": {
+                    "type": "number"
+                  },
+                  "fresh": {
+                    "type": "boolean"
+                  },
+                  "gulf": {
+                    "type": "boolean"
+                  },
+                  "gun": {
+                    "type": "boolean"
+                  },
+                  "hundred": {
+                    "type": "string"
+                  },
+                  "inside": {
+                    "type": "string"
+                  },
+                  "massage": {
+                    "type": "number"
+                  },
+                  "middle": {
+                    "type": "string"
+                  },
+                  "missing": {
+                    "type": "string"
+                  },
+                  "motor": {
+                    "type": "number"
+                  },
+                  "nearest": {
+                    "type": "number"
+                  },
+                  "no": {
+                    "type": "boolean"
+                  },
+                  "outer": {
+                    "type": "number"
+                  },
+                  "passage": {
+                    "type": "string"
+                  },
+                  "poor": {
+                    "type": "boolean"
+                  },
+                  "process": {
+                    "type": "boolean"
+                  },
+                  "quarter": {
+                    "type": "number"
+                  },
+                  "ranch": {
+                    "type": "string"
+                  },
+                  "rapidly": {
+                    "type": "number",
+                    "format": "double"
+                  },
+                  "smooth": {
+                    "type": "number"
+                  },
+                  "spin": {
+                    "type": "number"
+                  },
+                  "straight": {
+                    "type": "string"
+                  },
+                  "surface": {
+                    "type": "number",
+                    "format": "double"
+                  },
+                  "swing": {
+                    "type": "string"
+                  },
+                  "tip": {
+                    "type": "number",
+                    "format": "double"
+                  },
+                  "wore": {
+                    "type": "string"
+                  },
+                  "write": {
+                    "type": "boolean"
+                  }
+                }
+              }, {
+                "type": "string",
+                "enum": ["clay"]
+              }, {
+                "type": "number"
+              }, {
+                "type": "boolean"
+              }]
+            }
+          },
+          "roll": {
+            "type": "boolean"
+          },
+          "serious": {
+            "type": "string"
+          },
+          "sharp": {
+            "type": "boolean"
+          },
+          "shorter": {
+            "type": "boolean"
+          },
+          "simply": {
+            "type": "number"
+          },
+          "therefore": {
+            "type": "string"
+          },
+          "tobacco": {
+            "type": "string"
+          },
+          "trouble": {
+            "type": "boolean"
+          },
+          "unhappy": {
+            "type": "string"
+          },
+          "vowel": {
+            "type": "string"
+          },
+          "wagon": {
+            "type": "boolean"
+          },
+          "whatever": {
+            "type": "string"
+          },
+          "young": {
+            "type": "string"
+          }
+        }
+      },
+      "Somehow": {
+        "type": "object",
+        "required": ["drop", "blank", "brought", "perfectly", "ring", "goose", "snake", "cause", "captain", "accident", "long", "anything", "worth", "cover", "trip", "along", "hour", "noise", "few", "huge", "where", "carefully", "social", "yes", "angry", "clean", "water", "happened", "doctor", "century", "warm", "dream", "due", "baseball", "sugar"],
+        "properties": {
+          "brought": {
+            "$ref": "#/components/schemas/Brought"
+          },
+          "accident": {
+            "type": "number"
+          },
+          "along": {
+            "type": "string"
+          },
+          "angry": {
+            "type": "string"
+          },
+          "anything": {
+            "type": "string"
+          },
+          "baseball": {
+            "type": "string"
+          },
+          "blank": {
+            "type": "string"
+          },
+          "captain": {
+            "type": "number"
+          },
+          "carefully": {
+            "type": "string"
+          },
+          "cause": {
+            "type": "boolean"
+          },
+          "century": {
+            "type": "boolean"
+          },
+          "clean": {
+            "type": "boolean"
+          },
+          "cover": {
+            "type": "number",
+            "format": "double"
+          },
+          "doctor": {
+            "type": "number",
+            "format": "double"
+          },
+          "dream": {
+            "type": "string"
+          },
+          "drop": {
+            "type": "boolean"
+          },
+          "due": {
+            "type": "string"
+          },
+          "few": {
+            "type": "boolean"
+          },
+          "goose": {
+            "type": "number"
+          },
+          "happened": {
+            "type": "boolean"
+          },
+          "hour": {
+            "type": "boolean"
+          },
+          "huge": {
+            "type": "string"
+          },
+          "long": {
+            "type": "string"
+          },
+          "noise": {
+            "type": "number",
+            "format": "double"
+          },
+          "perfectly": {
+            "type": "boolean"
+          },
+          "ring": {
+            "type": "boolean"
+          },
+          "snake": {
+            "type": "number"
+          },
+          "social": {
+            "type": "boolean"
+          },
+          "sugar": {
+            "type": "number"
+          },
+          "trip": {
+            "type": "boolean"
+          },
+          "warm": {
+            "type": "boolean"
+          },
+          "water": {
+            "type": "number",
+            "format": "double"
+          },
+          "where": {
+            "type": "boolean"
+          },
+          "worth": {
+            "type": "string"
+          },
+          "yes": {
+            "type": "number",
+            "format": "double"
+          }
+        }
+      },
+      "Brought": {
+        "type": "object",
+        "required": ["flies", "steel", "deal", "practice", "cut", "evidence", "goose", "north", "for", "fighting", "three", "eight", "second", "tie", "mountain", "review", "serious", "grabbed", "let", "catch", "factor", "particles", "so", "arm", "balloon", "belt", "forward", "them", "look", "better", "century", "third", "compass", "organization", "breakfast"],
+        "properties": {
+          "arm": {
+            "type": "number"
+          },
+          "balloon": {
+            "type": "boolean"
+          },
+          "belt": {
+            "type": "string"
+          },
+          "better": {
+            "type": "number"
+          },
+          "breakfast": {
+            "type": "boolean"
+          },
+          "catch": {
+            "type": "string"
+          },
+          "century": {
+            "type": "number"
+          },
+          "compass": {
+            "type": "number"
+          },
+          "cut": {
+            "type": "boolean"
+          },
+          "deal": {
+            "type": "boolean"
+          },
+          "eight": {
+            "type": "string"
+          },
+          "evidence": {
+            "type": "string"
+          },
+          "factor": {
+            "type": "number"
+          },
+          "fighting": {
+            "type": "boolean"
+          },
+          "flies": {
+            "type": "string"
+          },
+          "for": {
+            "type": "number"
+          },
+          "forward": {
+            "type": "number",
+            "format": "double"
+          },
+          "goose": {
+            "type": "number",
+            "format": "double"
+          },
+          "grabbed": {
+            "type": "string"
+          },
+          "let": {
+            "type": "boolean"
+          },
+          "look": {
+            "type": "array",
+            "items": {
+              "oneOf": [{
+                "type": "object",
+                "required": ["gift", "underline", "young", "equally", "fuel", "available", "pattern", "protection", "air", "immediately", "manner", "instant", "later", "variety", "men", "golden", "create", "definition", "camera", "satellites", "amount", "process", "went", "bound", "cattle", "sense", "graph", "respect", "minute", "name", "front", "leaving", "useful", "valuable", "walk"],
+                "properties": {
+                  "air": {
+                    "type": "boolean"
+                  },
+                  "amount": {
+                    "type": "number"
+                  },
+                  "available": {
+                    "type": "string"
+                  },
+                  "bound": {
+                    "type": "boolean"
+                  },
+                  "camera": {
+                    "type": "number"
+                  },
+                  "cattle": {
+                    "type": "string"
+                  },
+                  "create": {
+                    "type": "boolean"
+                  },
+                  "definition": {
+                    "type": "number"
+                  },
+                  "equally": {
+                    "type": "string"
+                  },
+                  "front": {
+                    "type": "number"
+                  },
+                  "fuel": {
+                    "type": "string"
+                  },
+                  "gift": {
+                    "type": "boolean"
+                  },
+                  "golden": {
+                    "type": "string"
+                  },
+                  "graph": {
+                    "type": "number"
+                  },
+                  "immediately": {
+                    "type": "string"
+                  },
+                  "instant": {
+                    "type": "boolean"
+                  },
+                  "later": {
+                    "type": "number"
+                  },
+                  "leaving": {
+                    "type": "boolean"
+                  },
+                  "manner": {
+                    "type": "boolean"
+                  },
+                  "men": {
+                    "type": "number"
+                  },
+                  "minute": {
+                    "type": "string"
+                  },
+                  "name": {
+                    "type": "string"
+                  },
+                  "pattern": {
+                    "type": "boolean"
+                  },
+                  "process": {
+                    "type": "array",
+                    "items": {
+                      "oneOf": [{
+                        "type": "array",
+                        "items": {
+                          "oneOf": [{
+                            "type": "object",
+                            "required": ["some", "egg", "movie", "separate", "production", "fruit", "truck", "dropped", "replace", "captain", "attempt", "anything", "settlers", "high", "pound", "because", "shoulder", "worker", "upward", "brief", "declared", "surprise", "period", "may", "railroad", "tail", "one", "rice", "plus", "field", "improve", "were", "parts", "forgot"],
+                            "properties": {
+                              "attempt": {
+                                "$ref": "#/components/schemas/Attempt"
+                              },
+                              "anything": {
+                                "type": "boolean"
+                              },
+                              "because": {
+                                "type": "number"
+                              },
+                              "brief": {
+                                "type": "number"
+                              },
+                              "captain": {
+                                "type": "number",
+                                "format": "double"
+                              },
+                              "declared": {
+                                "type": "boolean"
+                              },
+                              "dropped": {
+                                "type": "number"
+                              },
+                              "egg": {
+                                "type": "string"
+                              },
+                              "field": {
+                                "type": "string"
+                              },
+                              "forgot": {
+                                "type": "boolean"
+                              },
+                              "fruit": {
+                                "type": "number",
+                                "format": "double"
+                              },
+                              "high": {
+                                "type": "number"
+                              },
+                              "improve": {
+                                "type": "boolean"
+                              },
+                              "may": {
+                                "type": "string"
+                              },
+                              "movie": {
+                                "type": "boolean"
+                              },
+                              "one": {
+                                "type": "string"
+                              },
+                              "parts": {
+                                "type": "string"
+                              },
+                              "period": {
+                                "type": "number"
+                              },
+                              "plus": {
+                                "type": "number"
+                              },
+                              "pound": {
+                                "type": "number"
+                              },
+                              "production": {
+                                "type": "boolean"
+                              },
+                              "railroad": {
+                                "type": "string"
+                              },
+                              "replace": {
+                                "type": "number"
+                              },
+                              "rice": {
+                                "type": "boolean"
+                              },
+                              "separate": {
+                                "type": "number"
+                              },
+                              "settlers": {
+                                "type": "string"
+                              },
+                              "shoulder": {
+                                "type": "boolean"
+                              },
+                              "some": {
+                                "type": "number"
+                              },
+                              "surprise": {
+                                "type": "boolean"
+                              },
+                              "tail": {
+                                "type": "string"
+                              },
+                              "truck": {
+                                "type": "string"
+                              },
+                              "upward": {
+                                "type": "string"
+                              },
+                              "were": {
+                                "type": "string"
+                              },
+                              "worker": {
+                                "type": "number",
+                                "format": "double"
+                              }
+                            }
+                          }, {
+                            "type": "string",
+                            "enum": ["act"]
+                          }, {
+                            "type": "number",
+                            "format": "double"
+                          }, {
+                            "type": "boolean"
+                          }]
+                        }
+                      }, {
+                        "type": "string",
+                        "enum": ["column"]
+                      }, {
+                        "type": "number"
+                      }, {
+                        "type": "boolean"
+                      }]
+                    }
+                  },
+                  "protection": {
+                    "type": "number"
+                  },
+                  "respect": {
+                    "type": "number",
+                    "format": "double"
+                  },
+                  "satellites": {
+                    "type": "number"
+                  },
+                  "sense": {
+                    "type": "boolean"
+                  },
+                  "underline": {
+                    "type": "string"
+                  },
+                  "useful": {
+                    "type": "boolean"
+                  },
+                  "valuable": {
+                    "type": "string"
+                  },
+                  "variety": {
+                    "type": "string"
+                  },
+                  "walk": {
+                    "type": "number"
+                  },
+                  "went": {
+                    "type": "string"
+                  },
+                  "young": {
+                    "type": "boolean"
+                  }
+                }
+              }, {
+                "type": "string",
+                "enum": ["nest"]
+              }, {
+                "type": "number"
+              }, {
+                "type": "boolean"
+              }]
+            }
+          },
+          "mountain": {
+            "type": "string"
+          },
+          "north": {
+            "type": "string"
+          },
+          "organization": {
+            "type": "number",
+            "format": "double"
+          },
+          "particles": {
+            "type": "number",
+            "format": "double"
+          },
+          "practice": {
+            "type": "number"
+          },
+          "review": {
+            "type": "number"
+          },
+          "second": {
+            "type": "boolean"
+          },
+          "serious": {
+            "type": "string"
+          },
+          "so": {
+            "type": "boolean"
+          },
+          "steel": {
+            "type": "string"
+          },
+          "them": {
+            "type": "boolean"
+          },
+          "third": {
+            "type": "string"
+          },
+          "three": {
+            "type": "boolean"
+          },
+          "tie": {
+            "type": "number"
+          }
+        }
+      },
+      "Attempt": {
+        "type": "object",
+        "required": ["atmosphere", "blind", "consonant", "strength", "pattern", "seven", "ice", "bottle", "captain", "office", "anywhere", "anything", "adjective", "music", "son", "composition", "lost", "serious", "block", "stick", "heard", "citizen", "slight", "refused", "shells", "tomorrow", "community", "minute", "she", "unit", "refer", "detail", "choice", "rays", "dull"],
+        "properties": {
+          "adjective": {
+            "type": "boolean"
+          },
+          "anything": {
+            "type": "string"
+          },
+          "anywhere": {
+            "type": "string"
+          },
+          "atmosphere": {
+            "type": "number"
+          },
+          "blind": {
+            "type": "string"
+          },
+          "block": {
+            "type": "boolean"
+          },
+          "bottle": {
+            "type": "string"
+          },
+          "captain": {
+            "type": "string"
+          },
+          "choice": {
+            "type": "number"
+          },
+          "citizen": {
+            "type": "string"
+          },
+          "community": {
+            "type": "boolean"
+          },
+          "composition": {
+            "type": "string"
+          },
+          "consonant": {
+            "type": "string"
+          },
+          "detail": {
+            "type": "string"
+          },
+          "dull": {
+            "type": "number"
+          },
+          "heard": {
+            "type": "boolean"
+          },
+          "ice": {
+            "type": "string"
+          },
+          "lost": {
+            "type": "string"
+          },
+          "minute": {
+            "type": "string"
+          },
+          "music": {
+            "type": "number"
+          },
+          "office": {
+            "type": "number"
+          },
+          "pattern": {
+            "type": "number"
+          },
+          "rays": {
+            "type": "array",
+            "items": {
+              "oneOf": [{
+                "type": "object",
+                "required": ["flight", "leader", "parent", "pink", "potatoes", "crowd", "swung", "fewer", "for", "choose", "across", "hungry", "corner", "flat", "club", "end", "enter", "join", "drawn", "everything", "apart", "element", "fear", "sky", "stiff", "living", "began", "sharp", "success", "fish", "there", "glad", "report", "clothing", "crop"],
+                "properties": {
+                  "sky": {
+                    "$ref": "#/components/schemas/Sky"
+                  },
+                  "across": {
+                    "type": "number",
+                    "format": "double"
+                  },
+                  "apart": {
+                    "type": "string"
+                  },
+                  "began": {
+                    "type": "boolean"
+                  },
+                  "choose": {
+                    "type": "number",
+                    "format": "double"
+                  },
+                  "clothing": {
+                    "type": "string"
+                  },
+                  "club": {
+                    "type": "boolean"
+                  },
+                  "corner": {
+                    "type": "string"
+                  },
+                  "crop": {
+                    "type": "number",
+                    "format": "double"
+                  },
+                  "crowd": {
+                    "type": "number",
+                    "format": "double"
+                  },
+                  "drawn": {
+                    "type": "number"
+                  },
+                  "element": {
+                    "type": "number"
+                  },
+                  "end": {
+                    "type": "number"
+                  },
+                  "enter": {
+                    "type": "string"
+                  },
+                  "everything": {
+                    "type": "boolean"
+                  },
+                  "fear": {
+                    "type": "string"
+                  },
+                  "fewer": {
+                    "type": "string"
+                  },
+                  "fish": {
+                    "type": "boolean"
+                  },
+                  "flat": {
+                    "type": "string"
+                  },
+                  "flight": {
+                    "type": "string"
+                  },
+                  "for": {
+                    "type": "boolean"
+                  },
+                  "glad": {
+                    "type": "number"
+                  },
+                  "hungry": {
+                    "type": "number",
+                    "format": "double"
+                  },
+                  "join": {
+                    "type": "number"
+                  },
+                  "leader": {
+                    "type": "boolean"
+                  },
+                  "living": {
+                    "type": "string"
+                  },
+                  "parent": {
+                    "type": "string"
+                  },
+                  "pink": {
+                    "type": "boolean"
+                  },
+                  "potatoes": {
+                    "type": "boolean"
+                  },
+                  "report": {
+                    "type": "string"
+                  },
+                  "sharp": {
+                    "type": "number"
+                  },
+                  "stiff": {
+                    "type": "boolean"
+                  },
+                  "success": {
+                    "type": "number",
+                    "format": "double"
+                  },
+                  "swung": {
+                    "type": "string"
+                  },
+                  "there": {
+                    "type": "number"
+                  }
+                }
+              }, {
+                "type": "string",
+                "enum": ["man"]
+              }, {
+                "type": "number",
+                "format": "double"
+              }, {
+                "type": "boolean"
+              }]
+            }
+          },
+          "refer": {
+            "type": "boolean"
+          },
+          "refused": {
+            "type": "number"
+          },
+          "serious": {
+            "type": "string"
+          },
+          "seven": {
+            "type": "string"
+          },
+          "she": {
+            "type": "number",
+            "format": "double"
+          },
+          "shells": {
+            "type": "number"
+          },
+          "slight": {
+            "type": "number"
+          },
+          "son": {
+            "type": "string"
+          },
+          "stick": {
+            "type": "boolean"
+          },
+          "strength": {
+            "type": "boolean"
+          },
+          "tomorrow": {
+            "type": "string"
+          },
+          "unit": {
+            "type": "boolean"
+          }
+        }
+      },
+      "Sky": {
+        "type": "object",
+        "required": ["magic", "next", "doing", "pink", "primitive", "string", "congress", "reader", "bright", "enjoy", "branch", "empty", "out", "scene", "cloud", "government", "ready", "customs", "copper", "quite", "grandfather", "sit", "sentence", "surprise", "slight", "change", "opposite", "look", "tool", "appearance", "parts", "fog", "policeman", "since"],
+        "properties": {
+          "pink": {
+            "$ref": "#/components/schemas/Pink"
+          },
+          "appearance": {
+            "type": "boolean"
+          },
+          "branch": {
+            "type": "string"
+          },
+          "bright": {
+            "type": "string"
+          },
+          "change": {
+            "type": "string"
+          },
+          "cloud": {
+            "type": "number"
+          },
+          "congress": {
+            "type": "string"
+          },
+          "copper": {
+            "type": "string"
+          },
+          "customs": {
+            "type": "number",
+            "format": "double"
+          },
+          "doing": {
+            "type": "number"
+          },
+          "empty": {
+            "type": "number"
+          },
+          "enjoy": {
+            "type": "number"
+          },
+          "fog": {
+            "type": "boolean"
+          },
+          "government": {
+            "type": "string"
+          },
+          "grandfather": {
+            "type": "number"
+          },
+          "look": {
+            "type": "number"
+          },
+          "magic": {
+            "type": "string"
+          },
+          "next": {
+            "type": "boolean"
+          },
+          "opposite": {
+            "type": "string"
+          },
+          "out": {
+            "type": "boolean"
+          },
+          "parts": {
+            "type": "number"
+          },
+          "policeman": {
+            "type": "number",
+            "format": "double"
+          },
+          "primitive": {
+            "type": "boolean"
+          },
+          "quite": {
+            "type": "boolean"
+          },
+          "reader": {
+            "type": "number"
+          },
+          "ready": {
+            "type": "string"
+          },
+          "scene": {
+            "type": "number",
+            "format": "double"
+          },
+          "sentence": {
+            "type": "boolean"
+          },
+          "since": {
+            "type": "number",
+            "format": "double"
+          },
+          "sit": {
+            "type": "number"
+          },
+          "slight": {
+            "type": "boolean"
+          },
+          "string": {
+            "type": "number"
+          },
+          "surprise": {
+            "type": "boolean"
+          },
+          "tool": {
+            "type": "string"
+          }
+        }
+      },
+      "Pink": {
+        "type": "object",
+        "required": ["allow", "newspaper", "next", "potatoes", "shake", "beauty", "strength", "line", "influence", "see", "temperature", "grown", "bean", "addition", "direction", "realize", "soft", "shells", "born", "lower", "sat", "noun", "develop", "football", "leather", "calm", "century", "liquid", "ocean", "once", "effect", "pride", "growth", "full", "story"],
+        "properties": {
+          "liquid": {
+            "$ref": "#/components/schemas/Liquid"
+          },
+          "addition": {
+            "type": "boolean"
+          },
+          "allow": {
+            "type": "string"
+          },
+          "bean": {
+            "type": "boolean"
+          },
+          "beauty": {
+            "type": "number",
+            "format": "double"
+          },
+          "born": {
+            "type": "boolean"
+          },
+          "calm": {
+            "type": "string"
+          },
+          "century": {
+            "type": "boolean"
+          },
+          "develop": {
+            "type": "boolean"
+          },
+          "direction": {
+            "type": "string"
+          },
+          "effect": {
+            "type": "number"
+          },
+          "football": {
+            "type": "boolean"
+          },
+          "full": {
+            "type": "boolean"
+          },
+          "grown": {
+            "type": "boolean"
+          },
+          "growth": {
+            "type": "string"
+          },
+          "influence": {
+            "type": "number",
+            "format": "double"
+          },
+          "leather": {
+            "type": "boolean"
+          },
+          "line": {
+            "type": "number"
+          },
+          "lower": {
+            "type": "number"
+          },
+          "newspaper": {
+            "type": "boolean"
+          },
+          "next": {
+            "type": "string"
+          },
+          "noun": {
+            "type": "boolean"
+          },
+          "ocean": {
+            "type": "number"
+          },
+          "once": {
+            "type": "string"
+          },
+          "potatoes": {
+            "type": "string"
+          },
+          "pride": {
+            "type": "number"
+          },
+          "realize": {
+            "type": "number"
+          },
+          "sat": {
+            "type": "number"
+          },
+          "see": {
+            "type": "string"
+          },
+          "shake": {
+            "type": "string"
+          },
+          "shells": {
+            "type": "string"
+          },
+          "soft": {
+            "type": "string"
+          },
+          "story": {
+            "type": "boolean"
+          },
+          "strength": {
+            "type": "boolean"
+          },
+          "temperature": {
+            "type": "string"
+          }
+        }
+      },
+      "Liquid": {
+        "type": "object",
+        "required": ["dig", "seed", "subject", "serve", "point", "not", "bite", "layers", "end", "enter", "up", "worried", "plan", "value", "those", "lying", "shorter", "toy", "nodded", "move", "refused", "could", "raw", "cream", "electricity", "sense", "being", "clock", "rhyme", "help", "depth", "comfortable", "gate", "sweet", "he"],
+        "properties": {
+          "being": {
+            "type": "boolean"
+          },
+          "bite": {
+            "type": "boolean"
+          },
+          "clock": {
+            "type": "number"
+          },
+          "comfortable": {
+            "type": "string"
+          },
+          "could": {
+            "type": "boolean"
+          },
+          "cream": {
+            "type": "number"
+          },
+          "depth": {
+            "type": "number",
+            "format": "double"
+          },
+          "dig": {
+            "type": "number",
+            "format": "double"
+          },
+          "electricity": {
+            "type": "number",
+            "format": "double"
+          },
+          "end": {
+            "type": "string"
+          },
+          "enter": {
+            "type": "boolean"
+          },
+          "gate": {
+            "type": "number"
+          },
+          "he": {
+            "type": "boolean"
+          },
+          "help": {
+            "type": "number"
+          },
+          "layers": {
+            "type": "string"
+          },
+          "lying": {
+            "type": "number"
+          },
+          "move": {
+            "type": "string"
+          },
+          "nodded": {
+            "type": "string"
+          },
+          "not": {
+            "type": "number",
+            "format": "double"
+          },
+          "plan": {
+            "type": "number"
+          },
+          "point": {
+            "type": "string"
+          },
+          "raw": {
+            "type": "number",
+            "format": "double"
+          },
+          "refused": {
+            "type": "string"
+          },
+          "rhyme": {
+            "type": "boolean"
+          },
+          "seed": {
+            "type": "boolean"
+          },
+          "sense": {
+            "type": "boolean"
+          },
+          "serve": {
+            "type": "string"
+          },
+          "shorter": {
+            "type": "number",
+            "format": "double"
+          },
+          "subject": {
+            "type": "boolean"
+          },
+          "sweet": {
+            "type": "string"
+          },
+          "those": {
+            "type": "number"
+          },
+          "toy": {
+            "type": "string"
+          },
+          "up": {
+            "type": "boolean"
+          },
+          "value": {
+            "type": "array",
+            "items": {
+              "oneOf": [{
+                "type": "array",
+                "items": {
+                  "oneOf": [{
+                    "type": "object",
+                    "required": ["play", "deal", "movie", "corn", "church", "fewer", "immediately", "thick", "pig", "bank", "faster", "act", "same", "above", "me", "older", "steam", "brick", "has", "camera", "factor", "park", "pet", "area", "over", "say", "master", "diagram", "task", "loose", "animal", "sweet", "useful", "swim", "higher"],
+                    "properties": {
+                      "animal": {
+                        "$ref": "#/components/schemas/Animal"
+                      },
+                      "above": {
+                        "type": "number"
+                      },
+                      "act": {
+                        "type": "string"
+                      },
+                      "area": {
+                        "type": "string"
+                      },
+                      "bank": {
+                        "type": "boolean"
+                      },
+                      "brick": {
+                        "type": "boolean"
+                      },
+                      "camera": {
+                        "type": "number",
+                        "format": "double"
+                      },
+                      "church": {
+                        "type": "boolean"
+                      },
+                      "corn": {
+                        "type": "string"
+                      },
+                      "deal": {
+                        "type": "boolean"
+                      },
+                      "diagram": {
+                        "type": "number",
+                        "format": "double"
+                      },
+                      "factor": {
+                        "type": "string"
+                      },
+                      "faster": {
+                        "type": "string"
+                      },
+                      "fewer": {
+                        "type": "string"
+                      },
+                      "has": {
+                        "type": "boolean"
+                      },
+                      "higher": {
+                        "type": "string"
+                      },
+                      "immediately": {
+                        "type": "string"
+                      },
+                      "loose": {
+                        "type": "number"
+                      },
+                      "master": {
+                        "type": "boolean"
+                      },
+                      "me": {
+                        "type": "string"
+                      },
+                      "movie": {
+                        "type": "number"
+                      },
+                      "older": {
+                        "type": "number"
+                      },
+                      "over": {
+                        "type": "boolean"
+                      },
+                      "park": {
+                        "type": "number"
+                      },
+                      "pet": {
+                        "type": "number"
+                      },
+                      "pig": {
+                        "type": "boolean"
+                      },
+                      "play": {
+                        "type": "string"
+                      },
+                      "same": {
+                        "type": "boolean"
+                      },
+                      "say": {
+                        "type": "boolean"
+                      },
+                      "steam": {
+                        "type": "number"
+                      },
+                      "sweet": {
+                        "type": "string"
+                      },
+                      "swim": {
+                        "type": "boolean"
+                      },
+                      "task": {
+                        "type": "string"
+                      },
+                      "thick": {
+                        "type": "string"
+                      },
+                      "useful": {
+                        "type": "boolean"
+                      }
+                    }
+                  }, {
+                    "type": "string",
+                    "enum": ["vowel"]
+                  }, {
+                    "type": "number",
+                    "format": "double"
+                  }, {
+                    "type": "boolean"
+                  }]
+                }
+              }, {
+                "type": "string",
+                "enum": ["reader"]
+              }, {
+                "type": "number"
+              }, {
+                "type": "boolean"
+              }]
+            }
+          },
+          "worried": {
+            "type": "boolean"
+          }
+        }
+      },
+      "Animal": {
+        "type": "object",
+        "required": ["income", "plane", "distance", "congress", "year", "young", "scientist", "cabin", "example", "red", "claws", "either", "cake", "broad", "noise", "row", "map", "together", "laid", "or", "doll", "vapor", "author", "cross", "excitement", "boat", "leather", "measure", "what", "among", "tribe", "daily", "thing"],
+        "properties": {
+          "among": {
+            "type": "number"
+          },
+          "author": {
+            "type": "number",
+            "format": "double"
+          },
+          "boat": {
+            "type": "number"
+          },
+          "broad": {
+            "type": "number"
+          },
+          "cabin": {
+            "type": "boolean"
+          },
+          "cake": {
+            "type": "string"
+          },
+          "claws": {
+            "type": "string"
+          },
+          "congress": {
+            "type": "number"
+          },
+          "cross": {
+            "type": "number"
+          },
+          "daily": {
+            "type": "number",
+            "format": "double"
+          },
+          "distance": {
+            "type": "string"
+          },
+          "doll": {
+            "type": "number",
+            "format": "double"
+          },
+          "either": {
+            "type": "string"
+          },
+          "example": {
+            "type": "boolean"
+          },
+          "excitement": {
+            "type": "string"
+          },
+          "income": {
+            "type": "boolean"
+          },
+          "laid": {
+            "type": "number",
+            "format": "double"
+          },
+          "leather": {
+            "type": "string"
+          },
+          "map": {
+            "type": "boolean"
+          },
+          "measure": {
+            "type": "number"
+          },
+          "noise": {
+            "type": "string"
+          },
+          "or": {
+            "type": "string"
+          },
+          "plane": {
+            "type": "boolean"
+          },
+          "red": {
+            "type": "array",
+            "items": {
+              "oneOf": [{
+                "type": "array",
+                "items": {
+                  "oneOf": [{
+                    "type": "object",
+                    "required": ["strong", "young", "rod", "dot", "dead", "trick", "bit", "changing", "danger", "loss", "mixture", "busy", "muscle", "forgotten", "beside", "hard", "zoo", "close", "bean", "sheep", "imagine", "determine", "could", "sell", "enough", "team", "brain", "sent", "minute", "toward", "what", "powerful", "left", "vowel", "exchange"],
+                    "properties": {
+                      "bean": {
+                        "type": "string"
+                      },
+                      "beside": {
+                        "type": "number"
+                      },
+                      "bit": {
+                        "type": "number",
+                        "format": "double"
+                      },
+                      "brain": {
+                        "type": "string"
+                      },
+                      "busy": {
+                        "type": "number"
+                      },
+                      "changing": {
+                        "type": "boolean"
+                      },
+                      "close": {
+                        "type": "string"
+                      },
+                      "could": {
+                        "type": "string"
+                      },
+                      "danger": {
+                        "type": "number"
+                      },
+                      "dead": {
+                        "type": "string"
+                      },
+                      "determine": {
+                        "type": "boolean"
+                      },
+                      "dot": {
+                        "type": "string"
+                      },
+                      "enough": {
+                        "type": "string"
+                      },
+                      "exchange": {
+                        "type": "boolean"
+                      },
+                      "forgotten": {
+                        "type": "number",
+                        "format": "double"
+                      },
+                      "hard": {
+                        "type": "boolean"
+                      },
+                      "imagine": {
+                        "type": "boolean"
+                      },
+                      "left": {
+                        "type": "number",
+                        "format": "double"
+                      },
+                      "loss": {
+                        "type": "number"
+                      },
+                      "minute": {
+                        "type": "array",
+                        "items": {
+                          "oneOf": [{
+                            "type": "array",
+                            "items": {
+                              "oneOf": [{
+                                "type": "object",
+                                "required": ["tonight", "mostly", "other", "facing", "giving", "beautiful", "trail", "tried", "music", "biggest", "diameter", "too", "leave", "now", "customs", "dear", "struggle", "shorter", "worry", "lovely", "surface", "spent", "wet", "cross", "rhyme", "graph", "lead", "off", "afternoon", "itself", "guess", "series", "growth", "further", "word"],
+                                "properties": {
+                                  "rhyme": {
+                                    "$ref": "#/components/schemas/Rhyme"
+                                  },
+                                  "afternoon": {
+                                    "type": "string"
+                                  },
+                                  "beautiful": {
+                                    "type": "number"
+                                  },
+                                  "biggest": {
+                                    "type": "boolean"
+                                  },
+                                  "cross": {
+                                    "type": "string"
+                                  },
+                                  "customs": {
+                                    "type": "number"
+                                  },
+                                  "dear": {
+                                    "type": "boolean"
+                                  },
+                                  "diameter": {
+                                    "type": "boolean"
+                                  },
+                                  "facing": {
+                                    "type": "string"
+                                  },
+                                  "further": {
+                                    "type": "boolean"
+                                  },
+                                  "giving": {
+                                    "type": "number"
+                                  },
+                                  "graph": {
+                                    "type": "string"
+                                  },
+                                  "growth": {
+                                    "type": "boolean"
+                                  },
+                                  "guess": {
+                                    "type": "string"
+                                  },
+                                  "itself": {
+                                    "type": "boolean"
+                                  },
+                                  "lead": {
+                                    "type": "string"
+                                  },
+                                  "leave": {
+                                    "type": "number"
+                                  },
+                                  "lovely": {
+                                    "type": "boolean"
+                                  },
+                                  "mostly": {
+                                    "type": "number",
+                                    "format": "double"
+                                  },
+                                  "music": {
+                                    "type": "string"
+                                  },
+                                  "now": {
+                                    "type": "string"
+                                  },
+                                  "off": {
+                                    "type": "number"
+                                  },
+                                  "other": {
+                                    "type": "boolean"
+                                  },
+                                  "series": {
+                                    "type": "boolean"
+                                  },
+                                  "shorter": {
+                                    "type": "number"
+                                  },
+                                  "spent": {
+                                    "type": "string"
+                                  },
+                                  "struggle": {
+                                    "type": "string"
+                                  },
+                                  "surface": {
+                                    "type": "number"
+                                  },
+                                  "tonight": {
+                                    "type": "boolean"
+                                  },
+                                  "too": {
+                                    "type": "string"
+                                  },
+                                  "trail": {
+                                    "type": "boolean"
+                                  },
+                                  "tried": {
+                                    "type": "string"
+                                  },
+                                  "wet": {
+                                    "type": "boolean"
+                                  },
+                                  "word": {
+                                    "type": "boolean"
+                                  },
+                                  "worry": {
+                                    "type": "number"
+                                  }
+                                }
+                              }, {
+                                "type": "string",
+                                "enum": ["region"]
+                              }, {
+                                "type": "number"
+                              }, {
+                                "type": "boolean"
+                              }]
+                            }
+                          }, {
+                            "type": "string",
+                            "enum": ["hollow"]
+                          }, {
+                            "type": "number",
+                            "format": "double"
+                          }, {
+                            "type": "boolean"
+                          }]
+                        }
+                      },
+                      "mixture": {
+                        "type": "number"
+                      },
+                      "muscle": {
+                        "type": "string"
+                      },
+                      "powerful": {
+                        "type": "string"
+                      },
+                      "rod": {
+                        "type": "string"
+                      },
+                      "sell": {
+                        "type": "string"
+                      },
+                      "sent": {
+                        "type": "string"
+                      },
+                      "sheep": {
+                        "type": "string"
+                      },
+                      "strong": {
+                        "type": "number"
+                      },
+                      "team": {
+                        "type": "number"
+                      },
+                      "toward": {
+                        "type": "number"
+                      },
+                      "trick": {
+                        "type": "boolean"
+                      },
+                      "vowel": {
+                        "type": "number"
+                      },
+                      "what": {
+                        "type": "number"
+                      },
+                      "young": {
+                        "type": "number"
+                      },
+                      "zoo": {
+                        "type": "boolean"
+                      }
+                    }
+                  }, {
+                    "type": "string",
+                    "enum": ["gray"]
+                  }, {
+                    "type": "number",
+                    "format": "double"
+                  }, {
+                    "type": "boolean"
+                  }]
+                }
+              }, {
+                "type": "string",
+                "enum": ["classroom"]
+              }, {
+                "type": "number",
+                "format": "double"
+              }, {
+                "type": "boolean"
+              }]
+            }
+          },
+          "row": {
+            "type": "string"
+          },
+          "scientist": {
+            "type": "boolean"
+          },
+          "thing": {
+            "type": "boolean"
+          },
+          "together": {
+            "type": "number",
+            "format": "double"
+          },
+          "tribe": {
+            "type": "number"
+          },
+          "vapor": {
+            "type": "number"
+          },
+          "what": {
+            "type": "boolean"
+          },
+          "year": {
+            "type": "string"
+          },
+          "young": {
+            "type": "string"
+          }
+        }
+      },
+      "Rhyme": {
+        "type": "object",
+        "required": ["careful", "for", "house", "prevent", "hungry", "identity", "complex", "root", "noise", "finish", "nobody", "day", "map", "traffic", "citizen", "sold", "still", "myself", "length", "its", "come", "football", "recognize", "grew", "people", "rapidly", "equal", "remarkable", "fly", "trade", "solve", "topic", "present", "coming", "softly"],
+        "properties": {
+          "careful": {
+            "type": "string"
+          },
+          "citizen": {
+            "type": "boolean"
+          },
+          "come": {
+            "type": "string"
+          },
+          "coming": {
+            "type": "array",
+            "items": {
+              "oneOf": [{
+                "type": "array",
+                "items": {
+                  "oneOf": [{
+                    "type": "object",
+                    "required": ["newspaper", "largest", "quick", "nation", "reach", "subject", "direct", "trick", "dried", "pure", "troops", "fox", "bet", "nor", "act", "huge", "dear", "highway", "add", "declared", "salt", "might", "pour", "please", "union", "easy", "highest", "gravity", "difference", "farmer", "therefore", "stranger", "vast", "rays", "creature"],
+                    "properties": {
+                      "act": {
+                        "type": "string"
+                      },
+                      "add": {
+                        "type": "number",
+                        "format": "double"
+                      },
+                      "bet": {
+                        "type": "string"
+                      },
+                      "creature": {
+                        "type": "number",
+                        "format": "double"
+                      },
+                      "dear": {
+                        "type": "boolean"
+                      },
+                      "declared": {
+                        "type": "number"
+                      },
+                      "difference": {
+                        "type": "boolean"
+                      },
+                      "direct": {
+                        "type": "boolean"
+                      },
+                      "dried": {
+                        "type": "string"
+                      },
+                      "easy": {
+                        "type": "string"
+                      },
+                      "farmer": {
+                        "type": "number"
+                      },
+                      "fox": {
+                        "type": "number"
+                      },
+                      "gravity": {
+                        "type": "string"
+                      },
+                      "highest": {
+                        "type": "number"
+                      },
+                      "highway": {
+                        "type": "boolean"
+                      },
+                      "huge": {
+                        "type": "string"
+                      },
+                      "largest": {
+                        "type": "boolean"
+                      },
+                      "might": {
+                        "type": "string"
+                      },
+                      "nation": {
+                        "type": "array",
+                        "items": {
+                          "oneOf": [{
+                            "type": "object",
+                            "required": ["income", "wool", "bring", "alphabet", "bit", "anything", "into", "current", "road", "lost", "ready", "whom", "on", "given", "shells", "will", "pleasure", "tail", "history", "right", "orange", "announced", "fly", "route", "oldest", "slide", "solve", "until", "aid", "collect", "useful", "wall", "crop", "object", "who"],
+                            "properties": {
+                              "current": {
+                                "$ref": "#/components/schemas/Current"
+                              },
+                              "aid": {
+                                "type": "string"
+                              },
+                              "alphabet": {
+                                "type": "string"
+                              },
+                              "announced": {
+                                "type": "string"
+                              },
+                              "anything": {
+                                "type": "number"
+                              },
+                              "bit": {
+                                "type": "string"
+                              },
+                              "bring": {
+                                "type": "number"
+                              },
+                              "collect": {
+                                "type": "boolean"
+                              },
+                              "crop": {
+                                "type": "string"
+                              },
+                              "fly": {
+                                "type": "boolean"
+                              },
+                              "given": {
+                                "type": "boolean"
+                              },
+                              "history": {
+                                "type": "boolean"
+                              },
+                              "income": {
+                                "type": "boolean"
+                              },
+                              "into": {
+                                "type": "boolean"
+                              },
+                              "lost": {
+                                "type": "boolean"
+                              },
+                              "object": {
+                                "type": "number",
+                                "format": "double"
+                              },
+                              "oldest": {
+                                "type": "string"
+                              },
+                              "on": {
+                                "type": "number"
+                              },
+                              "orange": {
+                                "type": "number"
+                              },
+                              "pleasure": {
+                                "type": "number"
+                              },
+                              "ready": {
+                                "type": "number",
+                                "format": "double"
+                              },
+                              "right": {
+                                "type": "boolean"
+                              },
+                              "road": {
+                                "type": "string"
+                              },
+                              "route": {
+                                "type": "string"
+                              },
+                              "shells": {
+                                "type": "number",
+                                "format": "double"
+                              },
+                              "slide": {
+                                "type": "boolean"
+                              },
+                              "solve": {
+                                "type": "string"
+                              },
+                              "tail": {
+                                "type": "string"
+                              },
+                              "until": {
+                                "type": "boolean"
+                              },
+                              "useful": {
+                                "type": "string"
+                              },
+                              "wall": {
+                                "type": "boolean"
+                              },
+                              "who": {
+                                "type": "boolean"
+                              },
+                              "whom": {
+                                "type": "boolean"
+                              },
+                              "will": {
+                                "type": "string"
+                              },
+                              "wool": {
+                                "type": "boolean"
+                              }
+                            }
+                          }, {
+                            "type": "string",
+                            "enum": ["advice"]
+                          }, {
+                            "type": "number"
+                          }, {
+                            "type": "boolean"
+                          }]
+                        }
+                      },
+                      "newspaper": {
+                        "type": "boolean"
+                      },
+                      "nor": {
+                        "type": "number"
+                      },
+                      "please": {
+                        "type": "string"
+                      },
+                      "pour": {
+                        "type": "boolean"
+                      },
+                      "pure": {
+                        "type": "number"
+                      },
+                      "quick": {
+                        "type": "number"
+                      },
+                      "rays": {
+                        "type": "boolean"
+                      },
+                      "reach": {
+                        "type": "boolean"
+                      },
+                      "salt": {
+                        "type": "boolean"
+                      },
+                      "stranger": {
+                        "type": "boolean"
+                      },
+                      "subject": {
+                        "type": "number",
+                        "format": "double"
+                      },
+                      "therefore": {
+                        "type": "boolean"
+                      },
+                      "trick": {
+                        "type": "string"
+                      },
+                      "troops": {
+                        "type": "number"
+                      },
+                      "union": {
+                        "type": "number"
+                      },
+                      "vast": {
+                        "type": "boolean"
+                      }
+                    }
+                  }, {
+                    "type": "string",
+                    "enum": ["represent"]
+                  }, {
+                    "type": "number",
+                    "format": "double"
+                  }, {
+                    "type": "boolean"
+                  }]
+                }
+              }, {
+                "type": "string",
+                "enum": ["having", "composition"]
+              }, {
+                "type": "number",
+                "format": "double"
+              }, {
+                "type": "boolean"
+              }]
+            }
+          },
+          "complex": {
+            "type": "string"
+          },
+          "day": {
+            "type": "boolean"
+          },
+          "equal": {
+            "type": "boolean"
+          },
+          "finish": {
+            "type": "string"
+          },
+          "fly": {
+            "type": "string"
+          },
+          "football": {
+            "type": "number"
+          },
+          "for": {
+            "type": "number"
+          },
+          "grew": {
+            "type": "number"
+          },
+          "house": {
+            "type": "string"
+          },
+          "hungry": {
+            "type": "boolean"
+          },
+          "identity": {
+            "type": "string"
+          },
+          "its": {
+            "type": "number"
+          },
+          "length": {
+            "type": "number"
+          },
+          "map": {
+            "type": "number"
+          },
+          "myself": {
+            "type": "boolean"
+          },
+          "nobody": {
+            "type": "boolean"
+          },
+          "noise": {
+            "type": "boolean"
+          },
+          "people": {
+            "type": "boolean"
+          },
+          "present": {
+            "type": "number"
+          },
+          "prevent": {
+            "type": "number",
+            "format": "double"
+          },
+          "rapidly": {
+            "type": "string"
+          },
+          "recognize": {
+            "type": "boolean"
+          },
+          "remarkable": {
+            "type": "string"
+          },
+          "root": {
+            "type": "number"
+          },
+          "softly": {
+            "type": "string"
+          },
+          "sold": {
+            "type": "string"
+          },
+          "solve": {
+            "type": "string"
+          },
+          "still": {
+            "type": "number",
+            "format": "double"
+          },
+          "topic": {
+            "type": "boolean"
+          },
+          "trade": {
+            "type": "number"
+          },
+          "traffic": {
+            "type": "string"
+          }
+        }
+      },
+      "Current": {
+        "type": "object",
+        "required": ["blind", "couple", "steep", "corn", "mainly", "moment", "worth", "arrangement", "adjective", "his", "rate", "too", "plain", "fire", "numeral", "pipe", "kitchen", "popular", "value", "sheep", "brush", "new", "still", "curious", "classroom", "suddenly", "spread", "environment", "itself", "cannot", "folks", "describe", "brother", "coming", "frame"],
+        "properties": {
+          "adjective": {
+            "type": "number",
+            "format": "double"
+          },
+          "arrangement": {
+            "type": "string"
+          },
+          "blind": {
+            "type": "number",
+            "format": "double"
+          },
+          "brother": {
+            "type": "number"
+          },
+          "brush": {
+            "type": "string"
+          },
+          "cannot": {
+            "type": "boolean"
+          },
+          "classroom": {
+            "type": "number"
+          },
+          "coming": {
+            "type": "number"
+          },
+          "corn": {
+            "type": "number",
+            "format": "double"
+          },
+          "couple": {
+            "type": "number"
+          },
+          "curious": {
+            "type": "string"
+          },
+          "describe": {
+            "type": "number"
+          },
+          "environment": {
+            "type": "boolean"
+          },
+          "fire": {
+            "type": "boolean"
+          },
+          "folks": {
+            "type": "boolean"
+          },
+          "frame": {
+            "type": "string"
+          },
+          "his": {
+            "type": "boolean"
+          },
+          "itself": {
+            "type": "number",
+            "format": "double"
+          },
+          "kitchen": {
+            "type": "boolean"
+          },
+          "mainly": {
+            "type": "array",
+            "items": {
+              "oneOf": [{
+                "type": "object",
+                "required": ["pond", "locate", "putting", "student", "donkey", "your", "tried", "noon", "major", "equator", "end", "yourself", "near", "bean", "struggle", "lying", "mistake", "nodded", "product", "having", "six", "large", "forward", "cry", "failed", "partly", "kept", "slope", "expect", "sunlight", "mean", "were", "hung", "carry"],
+                "properties": {
+                  "partly": {
+                    "$ref": "#/components/schemas/Partly"
+                  },
+                  "bean": {
+                    "type": "string"
+                  },
+                  "carry": {
+                    "type": "string"
+                  },
+                  "cry": {
+                    "type": "boolean"
+                  },
+                  "donkey": {
+                    "type": "number",
+                    "format": "double"
+                  },
+                  "end": {
+                    "type": "string"
+                  },
+                  "equator": {
+                    "type": "number",
+                    "format": "double"
+                  },
+                  "expect": {
+                    "type": "boolean"
+                  },
+                  "failed": {
+                    "type": "string"
+                  },
+                  "forward": {
+                    "type": "string"
+                  },
+                  "having": {
+                    "type": "boolean"
+                  },
+                  "hung": {
+                    "type": "number"
+                  },
+                  "kept": {
+                    "type": "string"
+                  },
+                  "large": {
+                    "type": "string"
+                  },
+                  "locate": {
+                    "type": "boolean"
+                  },
+                  "lying": {
+                    "type": "number"
+                  },
+                  "major": {
+                    "type": "boolean"
+                  },
+                  "mean": {
+                    "type": "string"
+                  },
+                  "mistake": {
+                    "type": "number"
+                  },
+                  "near": {
+                    "type": "boolean"
+                  },
+                  "nodded": {
+                    "type": "number"
+                  },
+                  "noon": {
+                    "type": "boolean"
+                  },
+                  "pond": {
+                    "type": "string"
+                  },
+                  "product": {
+                    "type": "string"
+                  },
+                  "putting": {
+                    "type": "number",
+                    "format": "double"
+                  },
+                  "six": {
+                    "type": "string"
+                  },
+                  "slope": {
+                    "type": "boolean"
+                  },
+                  "struggle": {
+                    "type": "boolean"
+                  },
+                  "student": {
+                    "type": "string"
+                  },
+                  "sunlight": {
+                    "type": "number"
+                  },
+                  "tried": {
+                    "type": "string"
+                  },
+                  "were": {
+                    "type": "number"
+                  },
+                  "your": {
+                    "type": "number"
+                  },
+                  "yourself": {
+                    "type": "string"
+                  }
+                }
+              }, {
+                "type": "string",
+                "enum": ["particularly"]
+              }, {
+                "type": "number"
+              }, {
+                "type": "boolean"
+              }]
+            }
+          },
+          "moment": {
+            "type": "boolean"
+          },
+          "new": {
+            "type": "string"
+          },
+          "numeral": {
+            "type": "number",
+            "format": "double"
+          },
+          "pipe": {
+            "type": "string"
+          },
+          "plain": {
+            "type": "string"
+          },
+          "popular": {
+            "type": "number"
+          },
+          "rate": {
+            "type": "boolean"
+          },
+          "sheep": {
+            "type": "string"
+          },
+          "spread": {
+            "type": "boolean"
+          },
+          "steep": {
+            "type": "string"
+          },
+          "still": {
+            "type": "string"
+          },
+          "suddenly": {
+            "type": "boolean"
+          },
+          "too": {
+            "type": "string"
+          },
+          "value": {
+            "type": "number"
+          },
+          "worth": {
+            "type": "number"
+          }
+        }
+      },
+      "Partly": {
+        "type": "object",
+        "required": ["paragraph", "office", "vegetable", "him", "point", "cheese", "getting", "remember", "cast", "identity", "now", "gas", "should", "read", "determine", "already", "tired", "clock", "instead", "water", "food", "seat", "longer", "swing", "snow", "tribe", "universe", "except", "exchange", "gate", "vast", "crop", "frame"],
+        "properties": {
+          "already": {
+            "type": "string"
+          },
+          "cast": {
+            "type": "number",
+            "format": "double"
+          },
+          "cheese": {
+            "type": "number"
+          },
+          "clock": {
+            "type": "boolean"
+          },
+          "crop": {
+            "type": "number"
+          },
+          "determine": {
+            "type": "string"
+          },
+          "except": {
+            "type": "number"
+          },
+          "exchange": {
+            "type": "string"
+          },
+          "food": {
+            "type": "number"
+          },
+          "frame": {
+            "type": "string"
+          },
+          "gas": {
+            "type": "string"
+          },
+          "gate": {
+            "type": "string"
+          },
+          "getting": {
+            "type": "boolean"
+          },
+          "him": {
+            "type": "string"
+          },
+          "identity": {
+            "type": "string"
+          },
+          "instead": {
+            "type": "boolean"
+          },
+          "longer": {
+            "type": "number"
+          },
+          "now": {
+            "type": "string"
+          },
+          "office": {
+            "type": "boolean"
+          },
+          "paragraph": {
+            "type": "boolean"
+          },
+          "point": {
+            "type": "boolean"
+          },
+          "read": {
+            "type": "string"
+          },
+          "remember": {
+            "type": "number"
+          },
+          "seat": {
+            "type": "boolean"
+          },
+          "should": {
+            "type": "boolean"
+          },
+          "snow": {
+            "type": "boolean"
+          },
+          "swing": {
+            "type": "string"
+          },
+          "tired": {
+            "type": "string"
+          },
+          "tribe": {
+            "type": "number"
+          },
+          "universe": {
+            "type": "string"
+          },
+          "vast": {
+            "type": "boolean"
+          },
+          "vegetable": {
+            "type": "boolean"
+          },
+          "water": {
+            "type": "number"
+          }
+        }
+      }
+    }
+  }
+}
